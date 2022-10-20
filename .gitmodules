@@ -3,4 +3,3 @@
 	url = https://github.com/foundry-rs/forge-std
 [submodule "Bootcamp"]
 	path = Bootcamp
-	url = https://github.com/PizzaHi5/Encode-Solidity-Bootcamp
