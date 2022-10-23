@@ -2,27 +2,45 @@ Homework 4
 VolcanoCoin contract
 At each point where you change your contract you should re deploy to the JavascriptVM
 and test your changes.
+
+For this Homework, all contract addresses posted will be deployed on Goerli Testnet.
+
 1. In Remix, create a new file called VolcanoCoin.sol .
+check!
 2. Define the pragma compiler version to ^0.8.0 .
+check!
 . Before the pragma version, add a license identifer
 // SPDX-License-Identifier: UNLICENSED .
+check!
 . Create a contract called VolcanoCoin.
+check!
 . Create a variable to hold the total supply of 10000.
+check!
 . Make a public function that returns the total supply.
+Contract Address:
+0xC56a7058caCeF80C102026B1AD01385Aa7d3eF77
+
 . Make a public function that can increase the total supply. Inside the function, add 1000
 to the current total supply.
+0xc4ca23187e36F44769d478e9FE657498114fba11
+
 . We probably want users to be aware of functions in the contract for greater
 transparency, but to make them all public will create some security risks (e.g. we don't
 want users to be able to change the total supply).
+check!
 Declare an address variable called owner .
 . Next, create a modifier which only allows an owner to execute certain functions.
 10. Make your change total supply function public , but add your modifier so that only
 the owner can execute it.
+0xc4AC25b10Ac51DF5fab7d1e8FeAaBd8a400F054d
+
 11. The contract owner's address should only be updateable in one place. Create a
 constructor and within the constructor, store the owner's address.
 12. It would be useful to broadcast a change in the total supply. Create an event that emits
 the new value whenever the total supply changes. When the supply changes, emit this
 event.
+0x16240CE8F0999589Bb352c09cECE02DB6ef3C986
+
 1. In order to keep track of user balances, we need to associate a user's address with the
 balance that they have.
 a) What is the best data structure to hold this association ?

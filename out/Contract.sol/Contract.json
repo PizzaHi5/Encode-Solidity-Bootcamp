@@ -1,0 +1,56 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212205f95d7fef1203beaa1cf2315deb64b61242a03b8d12840716e70195ed9577ffc64736f6c634300080d0033",
+    "sourceMap": "65:20:9:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea26469706673582212205f95d7fef1203beaa1cf2315deb64b61242a03b8d12840716e70195ed9577ffc64736f6c634300080d0033",
+    "sourceMap": "65:20:9:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/Contract.sol",
+    "id": 23295,
+    "exportedSymbols": {
+      "Contract": [
+        23294
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:47:9",
+    "nodes": [
+      {
+        "id": 23293,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:9",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 23294,
+        "nodeType": "ContractDefinition",
+        "src": "65:20:9",
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Contract",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          23294
+        ],
+        "name": "Contract",
+        "nameLocation": "74:8:9",
+        "scope": 23295,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  }
+}
