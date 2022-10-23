@@ -4,7 +4,7 @@ pragma solidity 0.8.17;
 
 // This contract is for Homework 3.txt
 
-contract BootcampContract {
+contract BootcampHW3 {
 
     uint256 number;
     address owner;
