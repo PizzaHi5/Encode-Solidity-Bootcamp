@@ -17,7 +17,7 @@ check!
 . Create a variable to hold the total supply of 10000.
 check!
 . Make a public function that returns the total supply.
-Contract Address:
+Goerli Testnet Contract Address:
 0xC56a7058caCeF80C102026B1AD01385Aa7d3eF77
 
 . Make a public function that can increase the total supply. Inside the function, add 1000
@@ -43,27 +43,43 @@ event.
 
 1. In order to keep track of user balances, we need to associate a user's address with the
 balance that they have.
-a) What is the best data structure to hold this association ?
+a) What is the best data structure to hold this association ? 
+-mappings is perfect, (address => uint)
+
 b) Using your choice of data structure, set up a variable called balances to keep
 track of the number of volcano coins that a user has.
 1. We want to allow the balances variable to be read from the contract, there are 2 ways
 to do this.
 What are those ways ?
+-Assign the msg.sender their public (or internal) balance
+-Reference the msg.sender to pull their balance
+
 Use one of the ways to make your balances variable visible to users of the contract.
 1. Now change the constructor, to give all of the total supply to the owner of the
 contract.
+0xC6bBd689ba3Ee1A020B1133cEcb4b2066c8741F0
+
 1. Now add a public function called transfer to allow a user to transfer their tokens to
 another address. This function should have 2 parameters :
 the amount to transfer and
 the recipient address.
 Why do we not need the sender's address here ?
+-To know which address the tokens are going to. 
+
 What would be the implication of having the sender's address as a parameter ?
+-Anyone could claim themselves as the owner of a different address
+
 1. Add an event to the transfer function to indicate that a transfer has taken place, it
 should log the amount and the recipient address.
+0x54657688480087F00CcAfE748081572Ab532ee8e
+
 1. We want to keep a record for each user's transfers. Create a struct called Payment
 that stores the transfer amount and the recipient's address.
+check!
 1. We want to have a payments array for each user sending the payment. Create a
 mapping which returns an array of Payment structs when given this user's address.
 Resources
+0x7ba4C1A84c2beB9Fbad970e7b7F3ab4d24C610f1
+
 Official Solidity Documentation
 Globally Available Variables
