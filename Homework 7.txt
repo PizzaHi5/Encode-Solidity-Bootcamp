@@ -3,6 +3,11 @@ Adding more functionality to the Volcano Coin contract
 . We made a payment mapping, but we havenʼt added all the functionality for it yet.
 Write a function to view the payment records, specifying the user as an input.
 What is the difference between doing this and making the mapping public ?
+- By doing this, users can only call the function. They cannot directly interact with the mapping. 
+This is good to prevent the overflow exploit where ppL would purposely overload a mapping to
+make interacting with that mapping cost a ton of gas to iterate thru.
+We can also add restrictions to this function too, example onlyOwner.
+
 . For the payments record mapping, create a function called recordPayment that
 takes
 . the senderʼs address,
