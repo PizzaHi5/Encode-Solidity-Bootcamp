@@ -1,0 +1,44 @@
+Homework 6 - Team Treasure Hunt
+Part 1
+To prepare for the treasure hunt you need to deploy a contract on Goerli test net.
+. Take the contract and interface from this gist
+. Deploy the contract to Goelri test net and note the address it was deployed to.
+0x968498F20E285D4EC5645930F49a4d2ea05A4208
+
+Part 2
+Register your team name, team number with your team wallet here:
+0x2410637D1302A87Fca0Ca71f6AeEa3627A50071B
+
+Look for clues in the transaction.
+This site may help you:
+https://www.rapidtables.com/convert/number/
+
+Part 3
+The treasure contract looks like this
+Once you have found it on the test net, you need to
+. Call it from your interface contract with your team wallet
+. If successful - you should see the event in TreasureChest.sol
+
+Hunt took me to many places
+Converted bytes info 68747470733a2f2f6269742e6c792f33655a396f566d to text 
+Took me to:
+https://pastebin.com/MSDKaG0v
+
+Had another bytes 68747470733A2F2F6269742E6C792F334E3674377953 to text
+Took me to:
+https://twitter.com/Janedoe42489302/status/1584951602749722625
+
+Binary converted to hexadecimal: E750138A5D6D2C3782FD52161BECBF1DC47AFBF09A398A061FD2424330AAAD59
+
+Pulls up a Goerli transaction
+Contains data: 0x68747470733a2f2f6269742e6c792f33573333624969
+
+Hexadecimal converts to https://bit.ly/3W33bIi
+
+"Well Done" :)
+Inspecting finds <!-- https://bit.ly/3ze0V7s -->
+
+Twitter page displays 0x18acF9DEB7F9535F4848a286b68C729AAc55697a
+
+This is the treasure chest contract! Finished! 
+Passed that contract into the initially deployed contracts to call this contracts GetTreasureChest!
