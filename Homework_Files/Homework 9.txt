@@ -8,5 +8,15 @@ Zeppelin standard libraries
 . Give your NFT a name and a symbol.
 . Write unit tests to check that you can
 1. Mint new NFTs
+On Goerli, deployed VolcanoNFT ERC721:
+0xEd5754601b3de7c5B2e99dd1abdc739E94F47434
+
+Minted new NFT in this txn to myself:
+0xdbbdde8251026544e54fa00becbb68d6d175a491f304f1354279ce10c9ed8e42
+
 2. Transfer an NFT
+This is the txn to a colleague for the NFT using SafeTransferFrom:
+0xe157387861f198ed4301fb848aab026372139899d8c992f5d3eb90a3127456f1
+
 . Deploy your contract to Goerli and send some NFTs to your colleagues.
+check! 

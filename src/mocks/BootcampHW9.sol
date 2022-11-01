@@ -5,15 +5,16 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract VolcanoCoin is Ownable {
+contract VolcanoNFT is ERC721("_iDidIt", "IDI"), Ownable {
     uint totalSupply = 10000;
+    uint tokenIdCounter = 0;
 
     event SupplyChange(uint supply);
     event Transfer(address recipient, uint amount);
 
     mapping (address => uint) internal balances;
     mapping (address => Payment[]) internal payments;
-
+    
     struct Payment {
         uint amount;
         address recipient;
@@ -46,6 +47,11 @@ contract VolcanoCoin is Ownable {
     function transfer(uint _amount, address recipient) public {
         recordPayment(msg.sender, recipient, _amount);
         emit Transfer(recipient, _amount);
+    }
+
+    function safeMint() public {
+        _safeMint(msg.sender, tokenIdCounter);
+        tokenIdCounter++;
     }
 
     // Thought of this for fun
