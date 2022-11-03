@@ -21,6 +21,6 @@ contract VolcanoNFTTest is Test {
     }
 
     function testMintNFT(address _to) public {
-        
+        //minted/transfered on remix in Goerli Testnet
     }
 }

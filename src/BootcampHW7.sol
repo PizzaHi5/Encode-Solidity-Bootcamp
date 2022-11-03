@@ -43,6 +43,8 @@ contract VolcanoCoin is Ownable {
     }
 
     function transfer(uint _amount, address recipient) public {
+        balances[msg.sender] -= _amount;
+        balances[recipient] += _amount;
         recordPayment(msg.sender, recipient, _amount);
         emit Transfer(recipient, _amount);
     }
@@ -60,5 +62,17 @@ contract VolcanoCoin is Ownable {
             //Got to think of this part still
         }
         return (_payments, i);
+    }
+
+    //added for HW11
+    function transferFrom(
+        address from,
+        address to,
+        uint256 amount
+    ) public {
+        balances[from] -= amount;
+        balances[to] += amount;
+        recordPayment(from, to, amount);
+        emit Transfer(to, amount);
     }
 }
