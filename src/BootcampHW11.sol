@@ -36,7 +36,7 @@ contract VolcanoNFT is ERC721("_iDidIt", "IDI"), Ownable {
         return "";
     }
 
-    function returnWei() public onlyOwner {
+    function returnWei() public payable onlyOwner {
         payable(msg.sender).transfer(address(this).balance);
     }
 

@@ -2,6 +2,9 @@ Homework 11
 Continue developing your Volcano NFT project
 1. Add a function that allows a user to mint an NFT if they pay 0.01 ETH, or an amount of
 Volcano coin (decide on a price yourself).
+In Goerli Testnet,
+VolcanoCoin 0x2C6E34E95436218d99664361B967ae9544cE847d
+VolcanoNFT 0x6B3f8d5841FC45c39E1F3dAe18a0387B03cDF453
 
 . Make sure that when a token is minted we can specify a token URI - a location where
 we can store metadata / images for the NFT.
