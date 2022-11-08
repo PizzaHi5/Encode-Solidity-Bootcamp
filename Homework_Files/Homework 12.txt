@@ -1,10 +1,13 @@
 Homework 12
 Team Gas Optimisation Game
 Follow the README instructions for the gas optimisation team game in the repo
-https://extropyio-soliditybootc-rncaqatw1zj.ws-us74.gitpod.io/
+https://gitpod.io/#https://github.com/ExtropyIO/SolidityBootcamp
 
 These are in the Exercises\Gas directory
 Your team should try to reduce the amount of gas used to deploy the contract, and when
 running transactions.
 You can change the code as much as you like, but you must not change the tests, and
 your contract must pass all tests.
+
+Check!
+Optimized my code to execute the tests at 5%, down from 15.5% starting
