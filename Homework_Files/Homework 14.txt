@@ -25,3 +25,29 @@ drain the contract.
 Contract code
 These gists Lottery Oracle have the contract code
 Read through the code and think how you can exploit it.
+
+- Contract Address on Goerli Testnet: 0x44962eca0915Debe5B6Bb488dBE54A56D6C7935A
+- Looking at the input parameters in the constructor of this contract 
+(the contract creation transaction logs), I found the
+Oracle Contract here: 0x0d186F6b68a95B3f575177b75c4144A941bFC4f3
+
+
+
+Summary
+- There were many exploits in this contract. One major exploit my team and I found was due to
+this contract being written before 0.8.0. Using the -1 point deduction in makeAGuess(), its 
+possible to underflow the point uint256. We purposely guessed wrong to underflow and get cap value.
+
+- With cap points, the contained ETH in contract was retrieved with payoutWinningTeam();
+
+- It was also possible to figure out the getRandomNumber() from the Oracle contract. Its a mod of seed
+which is a public changeable value with reset(). We calculated the winning lottery number by 
+looking at the current block of Goerli + 7days and modding it by seed which was set at contract creation.
+
+- The contract was reloaded with 5 ETH after this. 
+
+-I tried researching into the private keys of the admin addresses. Since the contract creators 
+possibly used default addresses provided during contract creation locally, those addresses 
+could have been used here. This means that googling the private keys of these admin addresses
+is worth trying out. Turns out this was indeed possible. 
+
