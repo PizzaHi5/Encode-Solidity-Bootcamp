@@ -1,0 +1,10 @@
+Homework 15
+. Write a contract to form a re entrancy attack against the lottery contract.
+- I was doing this in Hw14, going to keep working on my attack strategy and discuss
+with teammates. 
+
+- Turns out the attack contract 
+
+. Discuss in your teams the merits of the different types of scalability solutions
+. Which solutions have you used ?
+. What are your criteria for choosing a solution ?

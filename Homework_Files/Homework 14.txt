@@ -51,3 +51,12 @@ possibly used default addresses provided during contract creation locally, those
 could have been used here. This means that googling the private keys of these admin addresses
 is worth trying out. Turns out this was indeed possible. 
 
+- I also tried to design an attack contract to drain the funds in the Lottery Contract. Specifically
+eyeing that:
+    (bool sent, ) = _team.call.value(2_000_000_000)("");
+My standardPayout() function gets 2gwei out every transaction. I want to replicate how the 2016 DAO
+reentrancy attack drained funds using the fallback function. 
+
+I want the payoutWinningTeam fxn to call Attack.sol fallback function. 
+
+Try passing in address thats bytes code to execute Attack fxn?

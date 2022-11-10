@@ -719,6 +719,212 @@
         }
       }
     },
+    "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW11.sol": {
+      "lastModificationDate": 1667509462622,
+      "contentHash": "4e5dd00829573eb7b324147064d6b4da",
+      "sourceName": "src/BootcampHW11.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "src/BootcampHW7.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "VolcanoNFT": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "BootcampHW11.sol/VolcanoNFT.json"
+        }
+      }
+    },
+    "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW12.sol": {
+      "lastModificationDate": 1667853899088,
+      "contentHash": "035a597f119912708319a222a0139964",
+      "sourceName": "src/BootcampHW12.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/HW12/Ownable.sol"
+      ],
+      "versionRequirement": "=0.8.0",
+      "artifacts": {
+        "GasContract": {
+          "0.8.0+commit.c7dfd78e.Linux.gcc": "BootcampHW12.sol/GasContract.json"
+        }
+      }
+    },
+    "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW14/Attack.sol": {
+      "lastModificationDate": 1668020836380,
+      "contentHash": "35970f5404d01b31166f591931c6b48d",
+      "sourceName": "src/BootcampHW14/Attack.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/BootcampHW14/Lottery.sol",
+        "src/BootcampHW14/Oracle.sol"
+      ],
+      "versionRequirement": "=0.6.0",
+      "artifacts": {
+        "Attack": {
+          "0.6.0+commit.26b70077.Linux.gcc": "Attack.sol/Attack.json"
+        }
+      }
+    },
+    "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW14/Lottery.sol": {
+      "lastModificationDate": 1667950993934,
+      "contentHash": "857af1414b4075cecd9e9f84f3ae14b1",
+      "sourceName": "src/BootcampHW14/Lottery.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.0",
+      "artifacts": {
+        "IOracle": {
+          "0.6.0+commit.26b70077.Linux.gcc": "Lottery.sol/IOracle.json"
+        },
+        "Lottery": {
+          "0.6.0+commit.26b70077.Linux.gcc": "Lottery.sol/Lottery.json"
+        }
+      }
+    },
+    "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW14/Oracle.sol": {
+      "lastModificationDate": 1667950793516,
+      "contentHash": "6dd3e384fc46d745c25eea97864b2260",
+      "sourceName": "src/BootcampHW14/Oracle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.6.0",
+      "artifacts": {
+        "Oracle": {
+          "0.6.0+commit.26b70077.Linux.gcc": "Oracle.sol/Oracle.json"
+        }
+      }
+    },
     "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW3.sol": {
       "lastModificationDate": 1666542117883,
       "contentHash": "c569506c7c704013d166f9d2e71274cc",
@@ -794,8 +1000,8 @@
       }
     },
     "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW7.sol": {
-      "lastModificationDate": 1667242696532,
-      "contentHash": "a7b9c4d11637198772c3664e1c40e0d4",
+      "lastModificationDate": 1667501797386,
+      "contentHash": "a2f5da9deb8b16bb68a66adae135e3df",
       "sourceName": "src/BootcampHW7.sol",
       "solcConfig": {
         "settings": {
@@ -873,9 +1079,49 @@
         }
       }
     },
+    "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/HW12/Ownable.sol": {
+      "lastModificationDate": 1667854114768,
+      "contentHash": "9356df71d1d56282ab1d096b1bbba062",
+      "sourceName": "src/HW12/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "Ownable.sol/Context.json"
+        },
+        "Ownable": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
     "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/mocks/BootcampHW9.sol": {
-      "lastModificationDate": 1667333460087,
-      "contentHash": "6f52d53654adc9018f8a5cd90f8add39",
+      "lastModificationDate": 1667342296102,
+      "contentHash": "84bdfeca59389727f79903ce1265c563",
       "sourceName": "src/mocks/BootcampHW9.sol",
       "solcConfig": {
         "settings": {
@@ -917,8 +1163,8 @@
       ],
       "versionRequirement": "^0.8.0",
       "artifacts": {
-        "VolcanoCoin": {
-          "0.8.13+commit.abaa5c0e.Linux.gcc": "BootcampHW9.sol/VolcanoCoin.json"
+        "VolcanoNFT": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "BootcampHW9.sol/VolcanoNFT.json"
         }
       }
     },
@@ -971,8 +1217,8 @@
       }
     },
     "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/test/BootcampHw9.t.sol": {
-      "lastModificationDate": 1667246226532,
-      "contentHash": "d17d755dd9a342758a92964f850e2510",
+      "lastModificationDate": 1667419969042,
+      "contentHash": "f7ba06685cf17bc8d310dd6de9716602",
       "sourceName": "test/BootcampHw9.t.sol",
       "solcConfig": {
         "settings": {
@@ -1008,8 +1254,17 @@
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
         "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "src/BootcampHW7.sol"
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "src/mocks/BootcampHW9.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {

