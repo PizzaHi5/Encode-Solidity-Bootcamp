@@ -2,7 +2,7 @@
 pragma solidity 0.7.6;
 pragma abicoder v2;
 
-import "./iexchangemock.sol";
+import "./IExchange.sol";
 
 contract mockEventcall is IExchange {
 

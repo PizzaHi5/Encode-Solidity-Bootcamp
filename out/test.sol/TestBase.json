@@ -1,0 +1,383 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/src/Test.sol",
+    "id": 7659,
+    "exportedSymbols": {
+      "CommonBase": [
+        1933
+      ],
+      "DSTest": [
+        1901
+      ],
+      "StdAssertions": [
+        2759
+      ],
+      "StdCheats": [
+        4893
+      ],
+      "StdStorage": [
+        5798
+      ],
+      "StdUtils": [
+        7627
+      ],
+      "Test": [
+        7658
+      ],
+      "TestBase": [
+        7647
+      ],
+      "Vm": [
+        8632
+      ],
+      "console": [
+        16696
+      ],
+      "console2": [
+        24761
+      ],
+      "stdError": [
+        4959
+      ],
+      "stdJson": [
+        5625
+      ],
+      "stdMath": [
+        5767
+      ],
+      "stdStorage": [
+        7232
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:404:11",
+    "nodes": [
+      {
+        "id": 7629,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:11",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".2",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 7631,
+        "nodeType": "ImportDirective",
+        "src": "65:40:11",
+        "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/src/Common.sol",
+        "file": "./Common.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7659,
+        "sourceUnit": 1934,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 7630,
+              "name": "CommonBase",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1933,
+              "src": "73:10:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 7632,
+        "nodeType": "ImportDirective",
+        "src": "106:26:11",
+        "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/lib/ds-test/src/test.sol",
+        "file": "ds-test/test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7659,
+        "sourceUnit": 1902,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 7644,
+        "nodeType": "ImportDirective",
+        "src": "164:143:11",
+        "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/src/Components.sol",
+        "file": "./Components.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 7659,
+        "sourceUnit": 1946,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 7633,
+              "name": "console",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 16696,
+              "src": "172:7:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7634,
+              "name": "console2",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 24761,
+              "src": "181:8:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7635,
+              "name": "StdAssertions",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2759,
+              "src": "191:13:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7636,
+              "name": "StdCheats",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4893,
+              "src": "206:9:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7637,
+              "name": "stdError",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 4959,
+              "src": "217:8:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7638,
+              "name": "stdJson",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5625,
+              "src": "227:7:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7639,
+              "name": "stdMath",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5767,
+              "src": "236:7:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7640,
+              "name": "StdStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 5798,
+              "src": "245:10:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7641,
+              "name": "stdStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7232,
+              "src": "257:10:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7642,
+              "name": "StdUtils",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7627,
+              "src": "269:8:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 7643,
+              "name": "Vm",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 8632,
+              "src": "279:2:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 7647,
+        "nodeType": "ContractDefinition",
+        "src": "309:43:11",
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 7645,
+              "name": "CommonBase",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1933,
+              "src": "339:10:11"
+            },
+            "id": 7646,
+            "nodeType": "InheritanceSpecifier",
+            "src": "339:10:11"
+          }
+        ],
+        "canonicalName": "TestBase",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          7647,
+          1933
+        ],
+        "name": "TestBase",
+        "nameLocation": "327:8:11",
+        "scope": 7659,
+        "usedErrors": []
+      },
+      {
+        "id": 7658,
+        "nodeType": "ContractDefinition",
+        "src": "354:81:11",
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 7648,
+              "name": "TestBase",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7647,
+              "src": "380:8:11"
+            },
+            "id": 7649,
+            "nodeType": "InheritanceSpecifier",
+            "src": "380:8:11"
+          },
+          {
+            "baseName": {
+              "id": 7650,
+              "name": "DSTest",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1901,
+              "src": "390:6:11"
+            },
+            "id": 7651,
+            "nodeType": "InheritanceSpecifier",
+            "src": "390:6:11"
+          },
+          {
+            "baseName": {
+              "id": 7652,
+              "name": "StdAssertions",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 2759,
+              "src": "398:13:11"
+            },
+            "id": 7653,
+            "nodeType": "InheritanceSpecifier",
+            "src": "398:13:11"
+          },
+          {
+            "baseName": {
+              "id": 7654,
+              "name": "StdCheats",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 4893,
+              "src": "413:9:11"
+            },
+            "id": 7655,
+            "nodeType": "InheritanceSpecifier",
+            "src": "413:9:11"
+          },
+          {
+            "baseName": {
+              "id": 7656,
+              "name": "StdUtils",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 7627,
+              "src": "424:8:11"
+            },
+            "id": 7657,
+            "nodeType": "InheritanceSpecifier",
+            "src": "424:8:11"
+          }
+        ],
+        "canonicalName": "Test",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          7658,
+          7627,
+          4893,
+          4504,
+          2759,
+          1901,
+          7647,
+          1933
+        ],
+        "name": "Test",
+        "nameLocation": "372:4:11",
+        "scope": 7659,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  }
+}

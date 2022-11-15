@@ -57,6 +57,6 @@ eyeing that:
 My standardPayout() function gets 2gwei out every transaction. I want to replicate how the 2016 DAO
 reentrancy attack drained funds using the fallback function. 
 
-I want the payoutWinningTeam fxn to call Attack.sol fallback function. 
+- I want the payoutWinningTeam fxn to call Attack.sol fallback function. 
 
-Try passing in address thats bytes code to execute Attack fxn?
+- Try passing in address thats bytes code to execute Attack fxn?

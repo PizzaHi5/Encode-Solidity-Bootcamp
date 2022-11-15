@@ -3,7 +3,10 @@ Homework 15
 - I was doing this in Hw14, going to keep working on my attack strategy and discuss
 with teammates. 
 
-- Turns out the attack contract 
+- I continued to work on my attack contract from Hw14. I worked with the other teams
+and learned about how the reentrancy attack works. I added a fallback and receive 
+function. When I run standardPayment the first time, it executes as expected however
+remix crashes on the second run. Going to work out the details. 
 
 . Discuss in your teams the merits of the different types of scalability solutions
 . Which solutions have you used ?

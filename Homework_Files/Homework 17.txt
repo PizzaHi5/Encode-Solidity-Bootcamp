@@ -1,0 +1,27 @@
+Homework 17
+. Create a fork of mainnet (details below)
+. On the command line check the current block height, is this what you expected ?
+. Can you transfer ETH from one of Vitalik's accounts to your own account ?
+
+Creating a fork of mainnet
+See also lesson 9
+See hardhat documentation 
+https://hardhat.org/hardhat-network/docs/guides/forking-other-networks
+You first need to have an account on Infura or Alchemy
+https://www.alchemy.com/
+This will give you a key so that you can use their RPC nodes.
+
+Forking using ganache
+npx ganache-cli --f https://mainnet.infura.io/v3/<your key> -m
+“your 12 word mnemonic” --unlock <address> -i <chain ID>
+
+Fork from hardhat
+In hardhat you can also specify this in the config file
+npx hardhat node --fork https://ethmainnet.alchemyapi.io/v2/<your key>
+networks: {
+ hardhat: {
+ forking: {
+ url: "https://eth-mainnet.alchemyapi.io/v2/<key>",
+ }
+ }
+}

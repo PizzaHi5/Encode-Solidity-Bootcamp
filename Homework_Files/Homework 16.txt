@@ -1,0 +1,22 @@
+Homework 16
+. Setup an account on NFT Storage.
+. Upload an image and then associate this image with one of your Volcano NFTs. Think
+about a way of automating image generation.
+- Check!
+- I thought about using the autogenerating image AIs to take some base images and continually
+generate new content automatically.
+- While searching around figuring out how to input metadata correctly to the _baseURI, I found
+an excellent resource. Can always count on the solidity docs :)
+https://docs.soliditylang.org/en/latest/metadata.html
+
+. In the NFT Metadata - set some attributes/traits which can be viewed on OpenSea.
+Example
+https://moralis.io/how-to-add-attributes-to-nft-metadata/
+
+4. See if you can figure out how to store the NFT Metadata on chain within your NFT
+Contract. Hint look into the Base64 library. Example
+https://github.com/Brechtpd/base64/blob/main/base64.sol
+https://gist.github.com/farzaa/dc45da3eb91a41913767f3eb4d7830f1
+
+Checked! Got it! 
+
