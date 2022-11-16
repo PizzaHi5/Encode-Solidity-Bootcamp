@@ -13,10 +13,14 @@ https://docs.soliditylang.org/en/latest/metadata.html
 Example
 https://moralis.io/how-to-add-attributes-to-nft-metadata/
 
+- Check!
+
 4. See if you can figure out how to store the NFT Metadata on chain within your NFT
 Contract. Hint look into the Base64 library. Example
 https://github.com/Brechtpd/base64/blob/main/base64.sol
 https://gist.github.com/farzaa/dc45da3eb91a41913767f3eb4d7830f1
 
-Checked! Got it! 
-
+- Checked! This is a VolcanoNFT pog feesh
+https://testnets.opensea.io/assets/goerli/0x9afd8729dea5643fd7847d984e08019aeef7dad5/0
+Contract:
+0x9AfD8729DEA5643FD7847d984e08019aeEF7DaD5
