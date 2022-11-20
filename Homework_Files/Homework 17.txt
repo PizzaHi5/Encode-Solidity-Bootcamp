@@ -25,3 +25,10 @@ networks: {
  }
  }
 }
+
+Lesson 20 documentation includes how to fork off mainnet using Foundry so I am opting for that
+since Foundry is my preferred framework
+
+Using alchemy, performed:
+anvil --fork-url <your_rpc_url>    <--- Copy-pasta from alchemy
+which started the local blockchain instance at Block Number 1592117, Genesis Timestamp 1668715563
