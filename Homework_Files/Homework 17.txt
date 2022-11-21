@@ -29,6 +29,25 @@ networks: {
 Lesson 20 documentation includes how to fork off mainnet using Foundry so I am opting for that
 since Foundry is my preferred framework
 
-Using alchemy, performed:
-anvil --fork-url <your_rpc_url>    <--- Copy-pasta from alchemy
+- Using alchemy, performed:
+    anvil --fork-url <your_rpc_url>    <--- Copy-pasta from alchemy
 which started the local blockchain instance at Block Number 1592117, Genesis Timestamp 1668715563
+
+- I then used:
+cast rpc anvil_impersonateAccount 0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B
+to become Vitalik's accounts
+
+- Assigned myself and Vitalik using export
+- Ran:
+    cast balance $Vik
+which returned 48644326225953525683 (this value is the same as what is shown on etherscan), 48eth
+
+- Learned the difference between cast call and cast send after lots of playing around and reading Foundry documentation
+
+- After lots of trying and reading how cast works, ran:
+    cast send --value 48ether --from $Vik $Austin
+This mined a transaction and sent me 48ether from Vitalik! :)
+
+- Verified my account balance went up with:
+    cast balance $Austin
+    cast balance $Vik
