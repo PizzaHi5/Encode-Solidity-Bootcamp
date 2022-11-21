@@ -1,7 +1,10 @@
 Homework 18
 . See if you can listen to the mempool using ether.js (or similar web3.py etc)
-. Can you f nd a way to f lter your mempool listener and get only uniswap transactions?
+. Can you find a way to filter your mempool listener and get only uniswap transactions?
 3. How might you mitigate MEV & front running if you were building your own Dapp?
 . Have a look at the example sandwich bot and see how it works Repo.
 https://github.com/libevm/subway
+
+A colleague in chat posted a detailed guide to follow on how to interact with the mempool
+https://www.quicknode.com/guides/ethereum-development/how-to-filter-mempool-transactions-on-ethereum
 
