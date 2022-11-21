@@ -14,3 +14,9 @@ Main net details
 Uniswap V3 router address : 0xE592427A0AEce92De3Edee1F18E0157C05861564
 DAI stablecoin address : 0xE592427A0AEce92De3Edee1F18E0157C05861564
 Binance Account : 0xDFd5293D8e347dFe59E90eFd55b2956a1343963d
+
+- A colleague posted this link as helpful for HW20
+https://docs.ethers.io/v5/single-page/
+- The frontend guy used this documentation heavily for interacting with the perp-curie
+contracts for my Chainlink Hackathon Fall 2022
+

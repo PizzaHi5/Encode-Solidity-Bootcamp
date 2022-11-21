@@ -1,10 +1,34 @@
 Homework 18
 . See if you can listen to the mempool using ether.js (or similar web3.py etc)
 . Can you find a way to filter your mempool listener and get only uniswap transactions?
+
+- A colleague in chat posted a detailed guide to follow on how to interact with the mempool
+https://www.quicknode.com/guides/ethereum-development/how-to-filter-mempool-transactions-on-ethereum
+
+- Quicknode = API and RPC provider, Moralis = full package RPC provider, Alchemy/Infura = RPC provider
+
+- Learning more about the mempool has helped tremendously with understanding more about the inner workings
+of how my contracts are interacting with each other/others. 
+
+- Followed the guide, copy/pasta the abi for the uniswap v3 swap router, input my wss url from Alchemy
+
+- Ran
+    node index.js
+which starting listening to the eth mainnet mempool. Encounter the "app has exceeded its compute units per
+second capacity" a few times. Learned to just restart the listener. Must implement retrying for production.   
+
+- Listened to the mempool and heard :) Hurray!
+hash:  0xe2cf34bfc5fc3c14299e82dbb716a5af394300cabf5b09d425bd5772c2469ebe
+tokenIn:  0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
+tokenOut:  0x1E5193ccC53f25638Aa22a940af899B692e10B09
+amount:  23634575589136698174102
+gasPrice:  13187448369
+
 3. How might you mitigate MEV & front running if you were building your own Dapp?
 . Have a look at the example sandwich bot and see how it works Repo.
 https://github.com/libevm/subway
 
-A colleague in chat posted a detailed guide to follow on how to interact with the mempool
-https://www.quicknode.com/guides/ethereum-development/how-to-filter-mempool-transactions-on-ethereum
-
+For mitigating the risk, I bet one could listen for transactions that get started up
+by known sandwich bot contracts and revert your transaction if a particular function
+gets called before yours. This could help mitigate front running and sandwich attacks.
+The contract would need to check the transaction before its transaction.
