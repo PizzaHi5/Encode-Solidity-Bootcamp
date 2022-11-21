@@ -401,8 +401,472 @@
     "sourceMap": "",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "IS_TEST()": "fa7626d4",
+    "failed()": "ba414fa6"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"log_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"val\",\"type\":\"uint256[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256[]\",\"name\":\"val\",\"type\":\"int256[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"val\",\"type\":\"address[]\"}],\"name\":\"log_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"log_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"log_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"name\":\"log_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"val\",\"type\":\"address\"}],\"name\":\"log_named_address\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"val\",\"type\":\"uint256[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256[]\",\"name\":\"val\",\"type\":\"int256[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address[]\",\"name\":\"val\",\"type\":\"address[]\"}],\"name\":\"log_named_array\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"val\",\"type\":\"bytes\"}],\"name\":\"log_named_bytes\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"val\",\"type\":\"bytes32\"}],\"name\":\"log_named_bytes32\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"decimals\",\"type\":\"uint256\"}],\"name\":\"log_named_decimal_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"val\",\"type\":\"int256\"}],\"name\":\"log_named_int\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"val\",\"type\":\"string\"}],\"name\":\"log_named_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"key\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"val\",\"type\":\"uint256\"}],\"name\":\"log_named_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"log_string\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"log_uint\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"logs\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"IS_TEST\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"failed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/forge-std/src/StdAssertions.sol\":\"StdAssertions\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@base64/=lib/base64/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"lib/forge-std/lib/ds-test/src/test.sol\":{\"keccak256\":\"0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5\",\"dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr\"]},\"lib/forge-std/src/StdAssertions.sol\":{\"keccak256\":\"0xde2bdee8e0e530de3269da50ebba83f4f90dde817971488980b720281e3cde4d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cb3f05bb06b654db43f4ce38e22aa7e2296ee00615df5329623c08c9ac030f8d\",\"dweb:/ipfs/QmdKwTpFsTiDFmc8zGwbPRu8mDs4oiKdZvzSj3WpiiGaez\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_address",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "val",
+              "type": "uint256[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_array",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int256[]",
+              "name": "val",
+              "type": "int256[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_array",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address[]",
+              "name": "val",
+              "type": "address[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_array",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_bytes",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_bytes32",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int256",
+              "name": "",
+              "type": "int256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_int",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "val",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_address",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "val",
+              "type": "uint256[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_array",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "int256[]",
+              "name": "val",
+              "type": "int256[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_array",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "address[]",
+              "name": "val",
+              "type": "address[]",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_array",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes",
+              "name": "val",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_bytes",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "bytes32",
+              "name": "val",
+              "type": "bytes32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_bytes32",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "int256",
+              "name": "val",
+              "type": "int256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "decimals",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_decimal_int",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "val",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "decimals",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_decimal_uint",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "int256",
+              "name": "val",
+              "type": "int256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_int",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "string",
+              "name": "val",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_string",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "val",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_named_uint",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_string",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "log_uint",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "logs",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IS_TEST",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "failed",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@base64/=lib/base64/",
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/forge-std/src/StdAssertions.sol": "StdAssertions"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/lib/ds-test/src/test.sol": {
+        "keccak256": "0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54",
+        "urls": [
+          "bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5",
+          "dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "lib/forge-std/src/StdAssertions.sol": {
+        "keccak256": "0xde2bdee8e0e530de3269da50ebba83f4f90dde817971488980b720281e3cde4d",
+        "urls": [
+          "bzz-raw://cb3f05bb06b654db43f4ce38e22aa7e2296ee00615df5329623c08c9ac030f8d",
+          "dweb:/ipfs/QmdKwTpFsTiDFmc8zGwbPRu8mDs4oiKdZvzSj3WpiiGaez"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
   "ast": {
-    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/src/StdAssertions.sol",
+    "absolutePath": "lib/forge-std/src/StdAssertions.sol",
     "id": 2760,
     "exportedSymbols": {
       "DSTest": [
@@ -412,7 +876,7 @@
         2759
       ],
       "stdMath": [
-        5767
+        5746
       ]
     },
     "nodeType": "SourceUnit",
@@ -422,6 +886,7 @@
         "id": 1947,
         "nodeType": "PragmaDirective",
         "src": "32:31:4",
+        "nodes": [],
         "literals": [
           "solidity",
           ">=",
@@ -436,7 +901,8 @@
         "id": 1948,
         "nodeType": "ImportDirective",
         "src": "65:26:4",
-        "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/lib/ds-test/src/test.sol",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/lib/ds-test/src/test.sol",
         "file": "ds-test/test.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 2760,
@@ -448,11 +914,12 @@
         "id": 1949,
         "nodeType": "ImportDirective",
         "src": "92:23:4",
-        "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/lib/forge-std/src/StdMath.sol",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/StdMath.sol",
         "file": "./StdMath.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 2760,
-        "sourceUnit": 5768,
+        "sourceUnit": 5747,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -465,6 +932,7 @@
             "id": 1956,
             "nodeType": "EventDefinition",
             "src": "165:31:4",
+            "nodes": [],
             "anonymous": false,
             "eventSelector": "fb102865d50addddf69da9b5aa1bced66c80cf869a5c8d0471a467e18ce9cab1",
             "name": "log_array",
@@ -518,6 +986,7 @@
             "id": 1961,
             "nodeType": "EventDefinition",
             "src": "201:30:4",
+            "nodes": [],
             "anonymous": false,
             "eventSelector": "890a82679b470f2bd82816ed9b161f97d8b967f37fa3647c21d5bf39749e2dd5",
             "name": "log_array",
@@ -571,6 +1040,7 @@
             "id": 1966,
             "nodeType": "EventDefinition",
             "src": "236:31:4",
+            "nodes": [],
             "anonymous": false,
             "eventSelector": "40e1840f5769073d61bd01372d9b75baa9842d5629a0c99ff103be1178a8e9e2",
             "name": "log_array",
@@ -625,6 +1095,7 @@
             "id": 1973,
             "nodeType": "EventDefinition",
             "src": "272:49:4",
+            "nodes": [],
             "anonymous": false,
             "eventSelector": "00aaa39c9ffb5f567a4534380c737075702e1f7f14107fc95328e3b56c0325fb",
             "name": "log_named_array",
@@ -706,6 +1177,7 @@
             "id": 1980,
             "nodeType": "EventDefinition",
             "src": "326:48:4",
+            "nodes": [],
             "anonymous": false,
             "eventSelector": "a73eda09662f46dde729be4611385ff34fe6c44fbbc6f7e17b042b59a3445b57",
             "name": "log_named_array",
@@ -787,6 +1259,7 @@
             "id": 1987,
             "nodeType": "EventDefinition",
             "src": "379:49:4",
+            "nodes": [],
             "anonymous": false,
             "eventSelector": "3bcfb2ae2e8d132dd1fce7cf278a9a19756a9fceabe470df3bdabb4bc577d1bd",
             "name": "log_named_array",
@@ -869,10 +1342,12 @@
             "id": 2001,
             "nodeType": "FunctionDefinition",
             "src": "434:118:4",
+            "nodes": [],
             "body": {
               "id": 2000,
               "nodeType": "Block",
               "src": "484:68:4",
+              "nodes": [],
               "statements": [
                 {
                   "eventCall": {
@@ -1041,10 +1516,12 @@
             "id": 2012,
             "nodeType": "FunctionDefinition",
             "src": "558:83:4",
+            "nodes": [],
             "body": {
               "id": 2011,
               "nodeType": "Block",
               "src": "607:34:4",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -1173,10 +1650,12 @@
             "id": 2026,
             "nodeType": "FunctionDefinition",
             "src": "647:107:4",
+            "nodes": [],
             "body": {
               "id": 2025,
               "nodeType": "Block",
               "src": "715:39:4",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -1348,10 +1827,12 @@
             "id": 2062,
             "nodeType": "FunctionDefinition",
             "src": "760:312:4",
+            "nodes": [],
             "body": {
               "id": 2061,
               "nodeType": "Block",
               "src": "811:261:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -1821,10 +2302,12 @@
             "id": 2087,
             "nodeType": "FunctionDefinition",
             "src": "1078:186:4",
+            "nodes": [],
             "body": {
               "id": 2086,
               "nodeType": "Block",
               "src": "1148:116:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -2153,10 +2636,12 @@
             "id": 2100,
             "nodeType": "FunctionDefinition",
             "src": "1270:99:4",
+            "nodes": [],
             "body": {
               "id": 2099,
               "nodeType": "Block",
               "src": "1337:32:4",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -2313,10 +2798,12 @@
             "id": 2116,
             "nodeType": "FunctionDefinition",
             "src": "1375:123:4",
+            "nodes": [],
             "body": {
               "id": 2115,
               "nodeType": "Block",
               "src": "1461:37:4",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -2516,10 +3003,12 @@
             "id": 2158,
             "nodeType": "FunctionDefinition",
             "src": "1504:344:4",
+            "nodes": [],
             "body": {
               "id": 2157,
               "nodeType": "Block",
               "src": "1579:269:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -3097,10 +3586,12 @@
             "id": 2200,
             "nodeType": "FunctionDefinition",
             "src": "1854:341:4",
+            "nodes": [],
             "body": {
               "id": 2199,
               "nodeType": "Block",
               "src": "1927:268:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -3678,10 +4169,12 @@
             "id": 2242,
             "nodeType": "FunctionDefinition",
             "src": "2201:347:4",
+            "nodes": [],
             "body": {
               "id": 2241,
               "nodeType": "Block",
               "src": "2276:272:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -4261,10 +4754,12 @@
             "id": 2279,
             "nodeType": "FunctionDefinition",
             "src": "2554:256:4",
+            "nodes": [],
             "body": {
               "id": 2278,
               "nodeType": "Block",
               "src": "2648:162:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -4783,10 +5278,12 @@
             "id": 2316,
             "nodeType": "FunctionDefinition",
             "src": "2816:254:4",
+            "nodes": [],
             "body": {
               "id": 2315,
               "nodeType": "Block",
               "src": "2908:162:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -5305,10 +5802,12 @@
             "id": 2353,
             "nodeType": "FunctionDefinition",
             "src": "3076:256:4",
+            "nodes": [],
             "body": {
               "id": 2352,
               "nodeType": "Block",
               "src": "3170:162:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -5829,10 +6328,12 @@
             "id": 2372,
             "nodeType": "FunctionDefinition",
             "src": "3359:110:4",
+            "nodes": [],
             "body": {
               "id": 2371,
               "nodeType": "Block",
               "src": "3420:49:4",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -6095,10 +6596,12 @@
             "id": 2422,
             "nodeType": "FunctionDefinition",
             "src": "3475:470:4",
+            "nodes": [],
             "body": {
               "id": 2421,
               "nodeType": "Block",
               "src": "3559:386:4",
+              "nodes": [],
               "statements": [
                 {
                   "assignments": [
@@ -6177,10 +6680,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "3585:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -6191,7 +6694,7 @@
                       "lValueRequested": false,
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5678,
+                      "referencedDeclaration": 5657,
                       "src": "3585:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -6767,10 +7270,12 @@
             "id": 2458,
             "nodeType": "FunctionDefinition",
             "src": "3951:294:4",
+            "nodes": [],
             "body": {
               "id": 2457,
               "nodeType": "Block",
               "src": "4054:191:4",
+              "nodes": [],
               "statements": [
                 {
                   "assignments": [
@@ -6849,10 +7354,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "4080:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -6863,7 +7368,7 @@
                       "lValueRequested": false,
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5678,
+                      "referencedDeclaration": 5657,
                       "src": "4080:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -7242,10 +7747,12 @@
             "id": 2508,
             "nodeType": "FunctionDefinition",
             "src": "4251:465:4",
+            "nodes": [],
             "body": {
               "id": 2507,
               "nodeType": "Block",
               "src": "4333:383:4",
+              "nodes": [],
               "statements": [
                 {
                   "assignments": [
@@ -7324,10 +7831,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "4359:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -7338,7 +7845,7 @@
                       "lValueRequested": false,
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5714,
+                      "referencedDeclaration": 5693,
                       "src": "4359:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -7914,10 +8421,12 @@
             "id": 2544,
             "nodeType": "FunctionDefinition",
             "src": "4722:292:4",
+            "nodes": [],
             "body": {
               "id": 2543,
               "nodeType": "Block",
               "src": "4823:191:4",
+              "nodes": [],
               "statements": [
                 {
                   "assignments": [
@@ -7996,10 +8505,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "4849:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -8010,7 +8519,7 @@
                       "lValueRequested": false,
                       "memberName": "delta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5714,
+                      "referencedDeclaration": 5693,
                       "src": "4849:13:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -8389,10 +8898,12 @@
             "id": 2605,
             "nodeType": "FunctionDefinition",
             "src": "5020:726:4",
+            "nodes": [],
             "body": {
               "id": 2604,
               "nodeType": "Block",
               "src": "5197:549:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -8613,10 +9124,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "5319:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -8627,7 +9138,7 @@
                       "lValueRequested": false,
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5737,
+                      "referencedDeclaration": 5716,
                       "src": "5319:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -9243,10 +9754,12 @@
             "id": 2651,
             "nodeType": "FunctionDefinition",
             "src": "5752:524:4",
+            "nodes": [],
             "body": {
               "id": 2650,
               "nodeType": "Block",
               "src": "5956:320:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -9483,10 +9996,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "6083:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -9497,7 +10010,7 @@
                       "lValueRequested": false,
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5737,
+                      "referencedDeclaration": 5716,
                       "src": "6083:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -9876,10 +10389,12 @@
             "id": 2712,
             "nodeType": "FunctionDefinition",
             "src": "6282:635:4",
+            "nodes": [],
             "body": {
               "id": 2711,
               "nodeType": "Block",
               "src": "6371:546:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -10100,10 +10615,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "6493:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -10114,7 +10629,7 @@
                       "lValueRequested": false,
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5766,
+                      "referencedDeclaration": 5745,
                       "src": "6493:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -10730,10 +11245,12 @@
             "id": 2758,
             "nodeType": "FunctionDefinition",
             "src": "6923:428:4",
+            "nodes": [],
             "body": {
               "id": 2757,
               "nodeType": "Block",
               "src": "7031:320:4",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -10970,10 +11487,10 @@
                         "name": "stdMath",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5767,
+                        "referencedDeclaration": 5746,
                         "src": "7158:7:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5767_$",
+                          "typeIdentifier": "t_type$_t_contract$_stdMath_$5746_$",
                           "typeString": "type(library stdMath)"
                         }
                       },
@@ -10984,7 +11501,7 @@
                       "lValueRequested": false,
                       "memberName": "percentDelta",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 5766,
+                      "referencedDeclaration": 5745,
                       "src": "7158:20:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_int256_$_t_int256_$returns$_t_uint256_$",
@@ -11390,5 +11907,6 @@
       }
     ],
     "license": "MIT"
-  }
+  },
+  "id": 4
 }

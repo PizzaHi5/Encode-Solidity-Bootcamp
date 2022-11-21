@@ -39,17 +39,107 @@
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b506040516101863803806101868339818101604052602081101561003357600080fd5b505160008054610100600160a81b03191633610100021760ff191660ff90921691909117815561011d90819061006990396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063371f407b146037578063dbdff2c1146056575b600080fd5b605460048036036020811015604b57600080fd5b503560ff16606e565b005b605c60d3565b60408051918252519081900360200190f35b60005461010090046001600160a01b0316331460bd576040805162461bcd60e51b81526020600482015260096024820152682737ba1037bbb732b960b91b604482015290519081900360640190fd5b6000805460ff191660ff92909216919091179055565b6000805460ff16438160e157fe5b0690509056fea26469706673582212209851daba3e1d71c94d390fec6974f1d1a18077fbff9dcf153f66900a3921250064736f6c63430006000033",
+    "object": "0x608060405234801561001057600080fd5b506040516101863803806101868339818101604052602081101561003357600080fd5b505160008054610100600160a81b03191633610100021760ff191660ff90921691909117815561011d90819061006990396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063371f407b146037578063dbdff2c1146056575b600080fd5b605460048036036020811015604b57600080fd5b503560ff16606e565b005b605c60d3565b60408051918252519081900360200190f35b60005461010090046001600160a01b0316331460bd576040805162461bcd60e51b81526020600482015260096024820152682737ba1037bbb732b960b91b604482015290519081900360640190fd5b6000805460ff191660ff92909216919091179055565b6000805460ff16438160e157fe5b0690509056fea2646970667358221220782af3f933f6ff7d473352077cdc0fcf8f5d21d334e28a370de7389b70916f0864736f6c63430006000033",
     "sourceMap": "233:473:2:-:0;;;420:89;8:9:-1;5:2;;;30:1;27;20:12;5:2;420:89:2;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;420:89:2;462:5;:18;;-1:-1:-1;;;;;;462:18:2;470:10;462:18;;;-1:-1:-1;;490:12:2;;;;;;;;;;;233:473;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063371f407b146037578063dbdff2c1146056575b600080fd5b605460048036036020811015604b57600080fd5b503560ff16606e565b005b605c60d3565b60408051918252519081900360200190f35b60005461010090046001600160a01b0316331460bd576040805162461bcd60e51b81526020600482015260096024820152682737ba1037bbb732b960b91b604482015290519081900360640190fd5b6000805460ff191660ff92909216919091179055565b6000805460ff16438160e157fe5b0690509056fea26469706673582212209851daba3e1d71c94d390fec6974f1d1a18077fbff9dcf153f66900a3921250064736f6c63430006000033",
+    "object": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063371f407b146037578063dbdff2c1146056575b600080fd5b605460048036036020811015604b57600080fd5b503560ff16606e565b005b605c60d3565b60408051918252519081900360200190f35b60005461010090046001600160a01b0316331460bd576040805162461bcd60e51b81526020600482015260096024820152682737ba1037bbb732b960b91b604482015290519081900360640190fd5b6000805460ff191660ff92909216919091179055565b6000805460ff16438160e157fe5b0690509056fea2646970667358221220782af3f933f6ff7d473352077cdc0fcf8f5d21d334e28a370de7389b70916f0864736f6c63430006000033",
     "sourceMap": "233:473:2:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;233:473:2;;;;;;;;;;;;;;;;;;;;;;;;623:81;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;623:81:2;;;;:::i;:::-;;515:102;;;:::i;:::-;;;;;;;;;;;;;;;;623:81;377:5;;;;;-1:-1:-1;;;;;377:5:2;363:10;:19;355:41;;;;;-1:-1:-1;;;355:41:2;;;;;;;;;;;;-1:-1:-1;;;355:41:2;;;;;;;;;;;;;;;685:4:::1;:12:::0;;-1:-1:-1;;685:12:2::1;;::::0;;;::::1;::::0;;;::::1;::::0;;623:81::o;515:102::-;565:7;606:4;;;;591:12;606:4;591:19;;;;;584:26;;515:102;:::o",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "changeSeed(uint8)": "371f407b",
+    "getRandomNumber()": "dbdff2c1"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_seed\",\"type\":\"uint8\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_seed\",\"type\":\"uint8\"}],\"name\":\"changeSeed\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getRandomNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Sparx - https://github.com/letsgitcracking\",\"methods\":{},\"title\":\"Oracle for Lottery Game\"},\"userdoc\":{\"methods\":{},\"notice\":\"WARNING - NEVER USE IN PRODUCTION - FOR EDUCATIONAL PURPOSES ONLY!\"}},\"settings\":{\"compilationTarget\":{\"src/BootcampHW14/Oracle.sol\":\"Oracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@base64/=lib/base64/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/BootcampHW14/Oracle.sol\":{\"keccak256\":\"0xfd931b0734d97ae3cda53cdb2a14e25da39bbe1624eb8f32d2571ff4fc157afe\",\"urls\":[\"bzz-raw://f0656a0a04844ac4feda3c0a8e6d72dca69d0ef74e72af022a01a537d111daec\",\"dweb:/ipfs/QmNjtov9Wxz5D6ixpDorCv87MUkM1jxHpaBR8ZRngXRb8E\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.6.0+commit.26b70077"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "_seed",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "_seed",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "changeSeed"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRandomNumber",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "methods": {}
+      },
+      "userdoc": {
+        "methods": {}
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@base64/=lib/base64/",
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/BootcampHW14/Oracle.sol": "Oracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/BootcampHW14/Oracle.sol": {
+        "keccak256": "0xfd931b0734d97ae3cda53cdb2a14e25da39bbe1624eb8f32d2571ff4fc157afe",
+        "urls": [
+          "bzz-raw://f0656a0a04844ac4feda3c0a8e6d72dca69d0ef74e72af022a01a537d111daec",
+          "dweb:/ipfs/QmNjtov9Wxz5D6ixpDorCv87MUkM1jxHpaBR8ZRngXRb8E"
+        ],
+        "license": null
+      }
+    },
+    "version": 1
+  },
   "ast": {
-    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW14/Oracle.sol",
+    "absolutePath": "src/BootcampHW14/Oracle.sol",
     "id": 737,
     "exportedSymbols": {
       "Oracle": [
@@ -63,6 +153,7 @@
         "id": 681,
         "nodeType": "PragmaDirective",
         "src": "39:22:2",
+        "nodes": [],
         "literals": [
           "solidity",
           "0.6",
@@ -78,6 +169,7 @@
             "id": 683,
             "nodeType": "VariableDeclaration",
             "src": "280:18:2",
+            "nodes": [],
             "constant": false,
             "name": "seed",
             "overrides": null,
@@ -105,6 +197,7 @@
             "id": 685,
             "nodeType": "VariableDeclaration",
             "src": "304:13:2",
+            "nodes": [],
             "constant": false,
             "name": "owner",
             "overrides": null,
@@ -133,10 +226,12 @@
             "id": 697,
             "nodeType": "ModifierDefinition",
             "src": "324:90:2",
+            "nodes": [],
             "body": {
               "id": 696,
               "nodeType": "Block",
               "src": "345:69:2",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -289,10 +384,12 @@
             "id": 712,
             "nodeType": "FunctionDefinition",
             "src": "420:89:2",
+            "nodes": [],
             "body": {
               "id": 711,
               "nodeType": "Block",
               "src": "452:57:2",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -459,10 +556,12 @@
             "id": 723,
             "nodeType": "FunctionDefinition",
             "src": "515:102:2",
+            "nodes": [],
             "body": {
               "id": 722,
               "nodeType": "Block",
               "src": "574:43:2",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -589,10 +688,12 @@
             "id": 735,
             "nodeType": "FunctionDefinition",
             "src": "623:81:2",
+            "nodes": [],
             "body": {
               "id": 734,
               "nodeType": "Block",
               "src": "675:29:2",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -728,5 +829,6 @@
         "scope": 737
       }
     ]
-  }
+  },
+  "id": 2
 }

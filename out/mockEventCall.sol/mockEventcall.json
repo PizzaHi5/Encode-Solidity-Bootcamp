@@ -221,17 +221,386 @@
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b506102e6806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c806399e4a7711161006657806399e4a77114610106578063aa2a8294146100c1578063b248c4ef146100c1578063cb379aa214610119578063ff8180111461012757610093565b806329386b7b146100985780636896fabf146100c15780637a50364b146100d657806380f57f11146100eb575b600080fd5b6100ab6100a63660046101b8565b610142565b6040516100b89190610292565b60405180910390f35b6100c9610148565b6040516100b8919061026a565b6100e96100e4366004610249565b61014d565b005b6100f96100a63660046101b8565b6040516100b89190610289565b6100c961011436600461020b565b610194565b6100f96101143660046101d9565b6101356100a63660046101b8565b6040516100b8919061027e565b50600090565b600090565b336001600160a01b03167f54e4482fe1d38392effe5d53f0e9e72f60221a75a10cea7abbb684bfb03519bf83836040516101889291906102a2565b60405180910390a25050565b600092915050565b80356001600160a01b03811681146101b357600080fd5b919050565b6000602082840312156101c9578081fd5b6101d28261019c565b9392505050565b600080604083850312156101eb578081fd5b6101f48361019c565b91506102026020840161019c565b90509250929050565b6000806040838503121561021d578182fd5b6102268361019c565b9150602083013563ffffffff8116811461023e578182fd5b809150509250929050565b6000806040838503121561025b578182fd5b50508035926020909101359150565b6001600160a01b0391909116815260200190565b901515815260200190565b90815260200190565b62ffffff91909116815260200190565b91825260208201526040019056fea2646970667358221220f226ff8dc2978727eb39d1c5063815b613854fab612a27dc96faa60f342dd33464736f6c63430007060033",
+    "object": "0x608060405234801561001057600080fd5b506102e6806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c806399e4a7711161006657806399e4a77114610106578063aa2a8294146100c1578063b248c4ef146100c1578063cb379aa214610119578063ff8180111461012757610093565b806329386b7b146100985780636896fabf146100c15780637a50364b146100d657806380f57f11146100eb575b600080fd5b6100ab6100a63660046101b8565b610142565b6040516100b89190610292565b60405180910390f35b6100c9610148565b6040516100b8919061026a565b6100e96100e4366004610249565b61014d565b005b6100f96100a63660046101b8565b6040516100b89190610289565b6100c961011436600461020b565b610194565b6100f96101143660046101d9565b6101356100a63660046101b8565b6040516100b8919061027e565b50600090565b600090565b336001600160a01b03167f54e4482fe1d38392effe5d53f0e9e72f60221a75a10cea7abbb684bfb03519bf83836040516101889291906102a2565b60405180910390a25050565b600092915050565b80356001600160a01b03811681146101b357600080fd5b919050565b6000602082840312156101c9578081fd5b6101d28261019c565b9392505050565b600080604083850312156101eb578081fd5b6101f48361019c565b91506102026020840161019c565b90509250929050565b6000806040838503121561021d578182fd5b6102268361019c565b9150602083013563ffffffff8116811461023e578182fd5b809150509250929050565b6000806040838503121561025b578182fd5b50508035926020909101359150565b6001600160a01b0391909116815260200190565b901515815260200190565b90815260200190565b62ffffff91909116815260200190565b91825260208201526040019056fea2646970667358221220e82858b6c88bf9ffc6aece998339805c47da4467247201dee0b469fad8b1971764736f6c63430007060033",
     "sourceMap": "116:2632:1:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c806399e4a7711161006657806399e4a77114610106578063aa2a8294146100c1578063b248c4ef146100c1578063cb379aa214610119578063ff8180111461012757610093565b806329386b7b146100985780636896fabf146100c15780637a50364b146100d657806380f57f11146100eb575b600080fd5b6100ab6100a63660046101b8565b610142565b6040516100b89190610292565b60405180910390f35b6100c9610148565b6040516100b8919061026a565b6100e96100e4366004610249565b61014d565b005b6100f96100a63660046101b8565b6040516100b89190610289565b6100c961011436600461020b565b610194565b6100f96101143660046101d9565b6101356100a63660046101b8565b6040516100b8919061027e565b50600090565b600090565b336001600160a01b03167f54e4482fe1d38392effe5d53f0e9e72f60221a75a10cea7abbb684bfb03519bf83836040516101889291906102a2565b60405180910390a25050565b600092915050565b80356001600160a01b03811681146101b357600080fd5b919050565b6000602082840312156101c9578081fd5b6101d28261019c565b9392505050565b600080604083850312156101eb578081fd5b6101f48361019c565b91506102026020840161019c565b90509250929050565b6000806040838503121561021d578182fd5b6102268361019c565b9150602083013563ffffffff8116811461023e578182fd5b809150509250929050565b6000806040838503121561025b578182fd5b50508035926020909101359150565b6001600160a01b0391909116815260200190565b901515815260200190565b90815260200190565b62ffffff91909116815260200190565b91825260208201526040019056fea2646970667358221220f226ff8dc2978727eb39d1c5063815b613854fab612a27dc96faa60f342dd33464736f6c63430007060033",
+    "object": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c806399e4a7711161006657806399e4a77114610106578063aa2a8294146100c1578063b248c4ef146100c1578063cb379aa214610119578063ff8180111461012757610093565b806329386b7b146100985780636896fabf146100c15780637a50364b146100d657806380f57f11146100eb575b600080fd5b6100ab6100a63660046101b8565b610142565b6040516100b89190610292565b60405180910390f35b6100c9610148565b6040516100b8919061026a565b6100e96100e4366004610249565b61014d565b005b6100f96100a63660046101b8565b6040516100b89190610289565b6100c961011436600461020b565b610194565b6100f96101143660046101d9565b6101356100a63660046101b8565b6040516100b8919061027e565b50600090565b600090565b336001600160a01b03167f54e4482fe1d38392effe5d53f0e9e72f60221a75a10cea7abbb684bfb03519bf83836040516101889291906102a2565b60405180910390a25050565b600092915050565b80356001600160a01b03811681146101b357600080fd5b919050565b6000602082840312156101c9578081fd5b6101d28261019c565b9392505050565b600080604083850312156101eb578081fd5b6101f48361019c565b91506102026020840161019c565b90509250929050565b6000806040838503121561021d578182fd5b6102268361019c565b9150602083013563ffffffff8116811461023e578182fd5b809150509250929050565b6000806040838503121561025b578182fd5b50508035926020909101359150565b6001600160a01b0391909116815260200190565b901515815260200190565b90815260200190565b62ffffff91909116815260200190565b91825260208201526040019056fea2646970667358221220e82858b6c88bf9ffc6aece998339805c47da4467247201dee0b469fad8b1971764736f6c63430007060033",
     "sourceMap": "116:2632:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;303:125;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;2435:87;;;:::i;:::-;;;;;;;:::i;159:138::-;;;;;;:::i;:::-;;:::i;:::-;;684:117;;;;;;:::i;:::-;;;;;;;:::i;1996:127::-;;;;;;:::i;:::-;;:::i;1508:165::-;;;;;;:::i;1024:86::-;;;;;;:::i;:::-;;;;;;;:::i;303:125::-;-1:-1:-1;392:32:1;;303:125::o;2435:87::-;2496:22;2435:87;:::o;159:138::-;257:10;-1:-1:-1;;;;;241:49:1;;269:9;280;241:49;;;;;;;:::i;:::-;;;;;;;;159:138;;:::o;1996:127::-;2097:23;1996:127;;;;:::o;14:175:2:-;84:20;;-1:-1:-1;;;;;133:31:2;;123:42;;113:2;;179:1;176;169:12;113:2;65:124;;;:::o;194:198::-;;306:2;294:9;285:7;281:23;277:32;274:2;;;327:6;319;312:22;274:2;355:31;376:9;355:31;:::i;:::-;345:41;264:128;-1:-1:-1;;;264:128:2:o;397:274::-;;;526:2;514:9;505:7;501:23;497:32;494:2;;;547:6;539;532:22;494:2;575:31;596:9;575:31;:::i;:::-;565:41;;625:40;661:2;650:9;646:18;625:40;:::i;:::-;615:50;;484:187;;;;;:::o;676:372::-;;;804:2;792:9;783:7;779:23;775:32;772:2;;;825:6;817;810:22;772:2;853:31;874:9;853:31;:::i;:::-;843:41;;934:2;923:9;919:18;906:32;978:10;971:5;967:22;960:5;957:33;947:2;;1009:6;1001;994:22;947:2;1037:5;1027:15;;;762:286;;;;;:::o;1053:258::-;;;1182:2;1170:9;1161:7;1157:23;1153:32;1150:2;;;1203:6;1195;1188:22;1150:2;-1:-1:-1;;1231:23:2;;;1301:2;1286:18;;;1273:32;;-1:-1:-1;1140:171:2:o;1316:203::-;-1:-1:-1;;;;;1480:32:2;;;;1462:51;;1450:2;1435:18;;1417:102::o;1524:187::-;1689:14;;1682:22;1664:41;;1652:2;1637:18;;1619:92::o;1716:175::-;1860:25;;;1848:2;1833:18;;1815:76::o;2104:190::-;2278:8;2266:21;;;;2248:40;;2236:2;2221:18;;2203:91::o;2299:248::-;2473:25;;;2529:2;2514:18;;2507:34;2461:2;2446:18;;2428:119::o",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "emitFundingUpdated(uint256,uint256)": "7a50364b",
+    "getAccountBalance()": "6896fabf",
+    "getAllPendingFundingPayment(address)": "80f57f11",
+    "getClearingHouseConfig()": "aa2a8294",
+    "getMaxTickCrossedWithinBlock(address)": "29386b7b",
+    "getOrderBook()": "b248c4ef",
+    "getPendingFundingPayment(address,address)": "cb379aa2",
+    "getSqrtMarkTwapX96(address,uint32)": "99e4a771",
+    "isOverPriceSpread(address)": "ff818011"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"accountBalance\",\"type\":\"address\"}],\"name\":\"AccountBalanceChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"markTwap\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"indexTwap\",\"type\":\"uint256\"}],\"name\":\"FundingUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint24\",\"name\":\"maxTickCrossedWithinBlock\",\"type\":\"uint24\"}],\"name\":\"MaxTickCrossedWithinBlockChanged\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_mktPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_idxPrice\",\"type\":\"uint256\"}],\"name\":\"emitFundingUpdated\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAccountBalance\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"accountBalance\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"trader\",\"type\":\"address\"}],\"name\":\"getAllPendingFundingPayment\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"pendingFundingPayment\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getClearingHouseConfig\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"clearingHouse\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"}],\"name\":\"getMaxTickCrossedWithinBlock\",\"outputs\":[{\"internalType\":\"uint24\",\"name\":\"maxTickCrossedWithinBlock\",\"type\":\"uint24\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOrderBook\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"orderBook\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"trader\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"}],\"name\":\"getPendingFundingPayment\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"pendingFundingPayment\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"twapInterval\",\"type\":\"uint32\"}],\"name\":\"getSqrtMarkTwapX96\",\"outputs\":[{\"internalType\":\"uint160\",\"name\":\"sqrtMarkTwapX96\",\"type\":\"uint160\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"}],\"name\":\"isOverPriceSpread\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getAccountBalance()\":{\"returns\":{\"accountBalance\":\"`AccountBalance` contract address\"}},\"getAllPendingFundingPayment(address)\":{\"returns\":{\"pendingFundingPayment\":\"The pending funding payment of the trader. Positive value means the trader pays funding, negative value means the trader receives funding.\"}},\"getClearingHouseConfig()\":{\"returns\":{\"clearingHouse\":\"`ClearingHouseConfig` contract address\"}},\"getMaxTickCrossedWithinBlock(address)\":{\"params\":{\"baseToken\":\"Address of the base token\"},\"returns\":{\"maxTickCrossedWithinBlock\":\"The max ticks allowed to be crossed within a block when reducing position\"}},\"getOrderBook()\":{\"returns\":{\"orderBook\":\"`OrderBook` contract address\"}},\"getPendingFundingPayment(address,address)\":{\"details\":\"this is the view version of _updateFundingGrowth()\",\"returns\":{\"pendingFundingPayment\":\"The pending funding payment of a trader in one market, including liquidity & balance coefficients. Positive value means the trader pays funding, negative value means the trader receives funding.\"}},\"getSqrtMarkTwapX96(address,uint32)\":{\"details\":\"The return value is a X96 number\",\"params\":{\"baseToken\":\"Address of the base token\",\"twapInterval\":\"The time interval in seconds\"},\"returns\":{\"sqrtMarkTwapX96\":\"The square root of the market twap price\"}},\"isOverPriceSpread(address)\":{\"params\":{\"baseToken\":\"Address of the base token\"},\"returns\":{\"_0\":\"true if over the maximum price spread\"}}},\"version\":1},\"userdoc\":{\"events\":{\"AccountBalanceChanged(address)\":{\"notice\":\"Emitted when accountBalance is updated\"},\"FundingUpdated(address,uint256,uint256)\":{\"notice\":\"Emitted when the global funding growth is updated\"},\"MaxTickCrossedWithinBlockChanged(address,uint24)\":{\"notice\":\"Emitted when maxTickCrossedWithinBlock is updated\"}},\"kind\":\"user\",\"methods\":{\"getAccountBalance()\":{\"notice\":\"Get `AccountBalance` contract address\"},\"getAllPendingFundingPayment(address)\":{\"notice\":\"Get all the pending funding payment for a trader\"},\"getClearingHouseConfig()\":{\"notice\":\"Get `ClearingHouseConfig` contract address\"},\"getMaxTickCrossedWithinBlock(address)\":{\"notice\":\"Get the max ticks allowed to be crossed within a block when reducing position\"},\"getOrderBook()\":{\"notice\":\"Get `OrderBook` contract address\"},\"getPendingFundingPayment(address,address)\":{\"notice\":\"Get the pending funding payment for a trader in a given market\"},\"getSqrtMarkTwapX96(address,uint32)\":{\"notice\":\"Get the square root of the market twap price with the given time interval\"},\"isOverPriceSpread(address)\":{\"notice\":\"Check if current price spread between market price and index twap is over maximum price spread.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/mocks/mockEventCall.sol\":\"mockEventcall\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@base64/=lib/base64/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/mocks/IExchange.sol\":{\"keccak256\":\"0x7c2f1d6b2521704e4f8cc006904eeaae5fd99a6549250eb5cf2fc095f6899140\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://a86f8ea676b2c18cdab6165a01889d9a3bc872be909ef1e450153c75c5ef5040\",\"dweb:/ipfs/QmNX7y59aff1LjAH8onD3KTJw3yY5FjJq4bDiQ1Q5dheib\"]},\"src/mocks/mockEventCall.sol\":{\"keccak256\":\"0xa1c9bd055e290df825c51caabcfb58f085dfe758fb61fa437e3c4da3d892cbe5\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://e13218ca977e18b60054ddd984c2c66632ee8d4db66e15aa3f8e9eb105ebe446\",\"dweb:/ipfs/QmY6We9zNZr5A8ERjpCr3TgUg4F74wv57ePfC1oihdhui5\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "accountBalance",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "AccountBalanceChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "markTwap",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "indexTwap",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "FundingUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint24",
+              "name": "maxTickCrossedWithinBlock",
+              "type": "uint24",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "MaxTickCrossedWithinBlockChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_mktPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_idxPrice",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "emitFundingUpdated"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAccountBalance",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "accountBalance",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAllPendingFundingPayment",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "pendingFundingPayment",
+              "type": "int256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getClearingHouseConfig",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "clearingHouse",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMaxTickCrossedWithinBlock",
+          "outputs": [
+            {
+              "internalType": "uint24",
+              "name": "maxTickCrossedWithinBlock",
+              "type": "uint24"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOrderBook",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "orderBook",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPendingFundingPayment",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "pendingFundingPayment",
+              "type": "int256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "twapInterval",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSqrtMarkTwapX96",
+          "outputs": [
+            {
+              "internalType": "uint160",
+              "name": "sqrtMarkTwapX96",
+              "type": "uint160"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isOverPriceSpread",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getAccountBalance()": {
+            "returns": {
+              "accountBalance": "`AccountBalance` contract address"
+            }
+          },
+          "getAllPendingFundingPayment(address)": {
+            "returns": {
+              "pendingFundingPayment": "The pending funding payment of the trader. Positive value means the trader pays funding, negative value means the trader receives funding."
+            }
+          },
+          "getClearingHouseConfig()": {
+            "returns": {
+              "clearingHouse": "`ClearingHouseConfig` contract address"
+            }
+          },
+          "getMaxTickCrossedWithinBlock(address)": {
+            "params": {
+              "baseToken": "Address of the base token"
+            },
+            "returns": {
+              "maxTickCrossedWithinBlock": "The max ticks allowed to be crossed within a block when reducing position"
+            }
+          },
+          "getOrderBook()": {
+            "returns": {
+              "orderBook": "`OrderBook` contract address"
+            }
+          },
+          "getPendingFundingPayment(address,address)": {
+            "details": "this is the view version of _updateFundingGrowth()",
+            "returns": {
+              "pendingFundingPayment": "The pending funding payment of a trader in one market, including liquidity & balance coefficients. Positive value means the trader pays funding, negative value means the trader receives funding."
+            }
+          },
+          "getSqrtMarkTwapX96(address,uint32)": {
+            "details": "The return value is a X96 number",
+            "params": {
+              "baseToken": "Address of the base token",
+              "twapInterval": "The time interval in seconds"
+            },
+            "returns": {
+              "sqrtMarkTwapX96": "The square root of the market twap price"
+            }
+          },
+          "isOverPriceSpread(address)": {
+            "params": {
+              "baseToken": "Address of the base token"
+            },
+            "returns": {
+              "_0": "true if over the maximum price spread"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getAccountBalance()": {
+            "notice": "Get `AccountBalance` contract address"
+          },
+          "getAllPendingFundingPayment(address)": {
+            "notice": "Get all the pending funding payment for a trader"
+          },
+          "getClearingHouseConfig()": {
+            "notice": "Get `ClearingHouseConfig` contract address"
+          },
+          "getMaxTickCrossedWithinBlock(address)": {
+            "notice": "Get the max ticks allowed to be crossed within a block when reducing position"
+          },
+          "getOrderBook()": {
+            "notice": "Get `OrderBook` contract address"
+          },
+          "getPendingFundingPayment(address,address)": {
+            "notice": "Get the pending funding payment for a trader in a given market"
+          },
+          "getSqrtMarkTwapX96(address,uint32)": {
+            "notice": "Get the square root of the market twap price with the given time interval"
+          },
+          "isOverPriceSpread(address)": {
+            "notice": "Check if current price spread between market price and index twap is over maximum price spread."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@base64/=lib/base64/",
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/mocks/mockEventCall.sol": "mockEventcall"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/mocks/IExchange.sol": {
+        "keccak256": "0x7c2f1d6b2521704e4f8cc006904eeaae5fd99a6549250eb5cf2fc095f6899140",
+        "urls": [
+          "bzz-raw://a86f8ea676b2c18cdab6165a01889d9a3bc872be909ef1e450153c75c5ef5040",
+          "dweb:/ipfs/QmNX7y59aff1LjAH8onD3KTJw3yY5FjJq4bDiQ1Q5dheib"
+        ],
+        "license": "GPL-3.0-or-later"
+      },
+      "src/mocks/mockEventCall.sol": {
+        "keccak256": "0xa1c9bd055e290df825c51caabcfb58f085dfe758fb61fa437e3c4da3d892cbe5",
+        "urls": [
+          "bzz-raw://e13218ca977e18b60054ddd984c2c66632ee8d4db66e15aa3f8e9eb105ebe446",
+          "dweb:/ipfs/QmY6We9zNZr5A8ERjpCr3TgUg4F74wv57ePfC1oihdhui5"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
   "ast": {
-    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/mocks/mockEventCall.sol",
+    "absolutePath": "src/mocks/mockEventCall.sol",
     "id": 186,
     "exportedSymbols": {
       "IExchange": [
@@ -248,6 +617,7 @@
         "id": 88,
         "nodeType": "PragmaDirective",
         "src": "45:22:1",
+        "nodes": [],
         "literals": [
           "solidity",
           "0.7",
@@ -258,6 +628,7 @@
         "id": 89,
         "nodeType": "PragmaDirective",
         "src": "68:19:1",
+        "nodes": [],
         "literals": [
           "abicoder",
           "v2"
@@ -267,7 +638,8 @@
         "id": 90,
         "nodeType": "ImportDirective",
         "src": "89:25:1",
-        "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/mocks/IExchange.sol",
+        "nodes": [],
+        "absolutePath": "src/mocks/IExchange.sol",
         "file": "./IExchange.sol",
         "scope": 186,
         "sourceUnit": 87,
@@ -283,10 +655,12 @@
             "id": 107,
             "nodeType": "FunctionDefinition",
             "src": "159:138:1",
+            "nodes": [],
             "body": {
               "id": 106,
               "nodeType": "Block",
               "src": "226:71:1",
+              "nodes": [],
               "statements": [
                 {
                   "eventCall": {
@@ -468,15 +842,17 @@
             "id": 116,
             "nodeType": "FunctionDefinition",
             "src": "303:125:1",
-            "baseFunctions": [
-              31
-            ],
+            "nodes": [],
             "body": {
               "id": 115,
               "nodeType": "Block",
               "src": "426:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              31
+            ],
             "functionSelector": "29386b7b",
             "implemented": true,
             "kind": "function",
@@ -564,15 +940,17 @@
             "id": 126,
             "nodeType": "FunctionDefinition",
             "src": "684:117:1",
-            "baseFunctions": [
-              39
-            ],
+            "nodes": [],
             "body": {
               "id": 125,
               "nodeType": "Block",
               "src": "799:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              39
+            ],
             "documentation": {
               "id": 117,
               "nodeType": "StructuredDocumentation",
@@ -666,15 +1044,17 @@
             "id": 136,
             "nodeType": "FunctionDefinition",
             "src": "1024:86:1",
-            "baseFunctions": [
-              47
-            ],
+            "nodes": [],
             "body": {
               "id": 135,
               "nodeType": "Block",
               "src": "1108:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              47
+            ],
             "documentation": {
               "id": 127,
               "nodeType": "StructuredDocumentation",
@@ -768,15 +1148,17 @@
             "id": 148,
             "nodeType": "FunctionDefinition",
             "src": "1508:165:1",
-            "baseFunctions": [
-              57
-            ],
+            "nodes": [],
             "body": {
               "id": 147,
               "nodeType": "Block",
               "src": "1671:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              57
+            ],
             "documentation": {
               "id": 137,
               "nodeType": "StructuredDocumentation",
@@ -897,15 +1279,17 @@
             "id": 160,
             "nodeType": "FunctionDefinition",
             "src": "1996:127:1",
-            "baseFunctions": [
-              67
-            ],
+            "nodes": [],
             "body": {
               "id": 159,
               "nodeType": "Block",
               "src": "2121:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              67
+            ],
             "documentation": {
               "id": 149,
               "nodeType": "StructuredDocumentation",
@@ -1025,15 +1409,17 @@
             "id": 168,
             "nodeType": "FunctionDefinition",
             "src": "2233:77:1",
-            "baseFunctions": [
-              73
-            ],
+            "nodes": [],
             "body": {
               "id": 167,
               "nodeType": "Block",
               "src": "2308:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              73
+            ],
             "documentation": {
               "id": 161,
               "nodeType": "StructuredDocumentation",
@@ -1100,15 +1486,17 @@
             "id": 176,
             "nodeType": "FunctionDefinition",
             "src": "2435:87:1",
-            "baseFunctions": [
-              79
-            ],
+            "nodes": [],
             "body": {
               "id": 175,
               "nodeType": "Block",
               "src": "2520:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              79
+            ],
             "documentation": {
               "id": 169,
               "nodeType": "StructuredDocumentation",
@@ -1175,15 +1563,17 @@
             "id": 184,
             "nodeType": "FunctionDefinition",
             "src": "2656:90:1",
-            "baseFunctions": [
-              85
-            ],
+            "nodes": [],
             "body": {
               "id": 183,
               "nodeType": "Block",
               "src": "2744:2:1",
+              "nodes": [],
               "statements": []
             },
+            "baseFunctions": [
+              85
+            ],
             "documentation": {
               "id": 177,
               "nodeType": "StructuredDocumentation",
@@ -1280,5 +1670,6 @@
       }
     ],
     "license": "GPL-3.0-or-later"
-  }
+  },
+  "id": 1
 }

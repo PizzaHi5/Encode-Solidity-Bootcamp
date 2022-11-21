@@ -24,8 +24,74 @@
     "sourceMap": "",
     "linkReferences": {}
   },
+  "methodIdentifiers": {
+    "getRandomNumber()": "dbdff2c1"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getRandomNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Sparx - https://github.com/letsgitcracking\",\"methods\":{},\"title\":\"Lottery Game with interface to Oracle\"},\"userdoc\":{\"methods\":{},\"notice\":\"WARNING - NEVER USE IN PRODUCTION - FOR EDUCATIONAL PURPOSES ONLY!\"}},\"settings\":{\"compilationTarget\":{\"src/BootcampHW14/Lottery.sol\":\"IOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@base64/=lib/base64/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/BootcampHW14/Lottery.sol\":{\"keccak256\":\"0xa5cd1bd8982a40ccd63c2c1876b80cf6de065a29d03d21b07739df0c5148d086\",\"urls\":[\"bzz-raw://a5411ab1fc503d83225c69acc3dcc49f79fbcaf3d76295d4fca2f36443d71a25\",\"dweb:/ipfs/QmVF9KFxPk55uTWVuAUDG93GfybhyMaAx2UpYQwb94SwP1\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.6.0+commit.26b70077"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRandomNumber",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "methods": {}
+      },
+      "userdoc": {
+        "methods": {}
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@base64/=lib/base64/",
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/BootcampHW14/Lottery.sol": "IOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/BootcampHW14/Lottery.sol": {
+        "keccak256": "0xa5cd1bd8982a40ccd63c2c1876b80cf6de065a29d03d21b07739df0c5148d086",
+        "urls": [
+          "bzz-raw://a5411ab1fc503d83225c69acc3dcc49f79fbcaf3d76295d4fca2f36443d71a25",
+          "dweb:/ipfs/QmVF9KFxPk55uTWVuAUDG93GfybhyMaAx2UpYQwb94SwP1"
+        ],
+        "license": null
+      }
+    },
+    "version": 1
+  },
   "ast": {
-    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/BootcampHW14/Lottery.sol",
+    "absolutePath": "src/BootcampHW14/Lottery.sol",
     "id": 680,
     "exportedSymbols": {
       "IOracle": [
@@ -42,6 +108,7 @@
         "id": 160,
         "nodeType": "PragmaDirective",
         "src": "39:22:1",
+        "nodes": [],
         "literals": [
           "solidity",
           "0.6",
@@ -52,6 +119,7 @@
         "id": 161,
         "nodeType": "PragmaDirective",
         "src": "62:33:1",
+        "nodes": [],
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -66,7 +134,7 @@
             "id": 166,
             "nodeType": "FunctionDefinition",
             "src": "305:59:1",
-            "body": null,
+            "nodes": [],
             "documentation": null,
             "functionSelector": "dbdff2c1",
             "implemented": false,
@@ -141,6 +209,7 @@
             "id": 176,
             "nodeType": "StructDefinition",
             "src": "391:116:1",
+            "nodes": [],
             "canonicalName": "Lottery.Team",
             "members": [
               {
@@ -261,6 +330,7 @@
             "id": 181,
             "nodeType": "StructDefinition",
             "src": "513:76:1",
+            "nodes": [],
             "canonicalName": "Lottery.LotteryDetails",
             "members": [
               {
@@ -326,6 +396,7 @@
             "id": 183,
             "nodeType": "VariableDeclaration",
             "src": "623:26:1",
+            "nodes": [],
             "constant": false,
             "functionSelector": "35eb2be2",
             "name": "teamCounter",
@@ -354,6 +425,7 @@
             "id": 185,
             "nodeType": "VariableDeclaration",
             "src": "655:21:1",
+            "nodes": [],
             "constant": false,
             "name": "OracleAddress",
             "overrides": null,
@@ -382,6 +454,7 @@
             "id": 187,
             "nodeType": "VariableDeclaration",
             "src": "682:33:1",
+            "nodes": [],
             "constant": false,
             "functionSelector": "ca2890d9",
             "name": "thisLottery",
@@ -412,6 +485,7 @@
             "id": 190,
             "nodeType": "VariableDeclaration",
             "src": "721:25:1",
+            "nodes": [],
             "constant": false,
             "functionSelector": "dbc897ad",
             "name": "teamDetails",
@@ -452,6 +526,7 @@
             "id": 194,
             "nodeType": "VariableDeclaration",
             "src": "752:38:1",
+            "nodes": [],
             "constant": false,
             "functionSelector": "429b62e5",
             "name": "admins",
@@ -499,6 +574,7 @@
             "id": 198,
             "nodeType": "VariableDeclaration",
             "src": "796:43:1",
+            "nodes": [],
             "constant": false,
             "functionSelector": "a04e318c",
             "name": "passwords",
@@ -546,6 +622,7 @@
             "id": 202,
             "nodeType": "VariableDeclaration",
             "src": "845:47:1",
+            "nodes": [],
             "constant": false,
             "functionSelector": "b6cc2594",
             "name": "registeredTeams",
@@ -593,6 +670,7 @@
             "id": 208,
             "nodeType": "EventDefinition",
             "src": "899:53:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogAddressPaid",
@@ -665,6 +743,7 @@
             "id": 212,
             "nodeType": "EventDefinition",
             "src": "957:37:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogSetOracle",
@@ -709,6 +788,7 @@
             "id": 218,
             "nodeType": "EventDefinition",
             "src": "999:57:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogTeamCorrectGuess",
@@ -781,6 +861,7 @@
             "id": 224,
             "nodeType": "EventDefinition",
             "src": "1061:55:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogTeamRegistered",
@@ -853,6 +934,7 @@
             "id": 228,
             "nodeType": "EventDefinition",
             "src": "1121:45:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogTeamNotRegistered",
@@ -897,6 +979,7 @@
             "id": 234,
             "nodeType": "EventDefinition",
             "src": "1171:61:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogTeamWrongGuess",
@@ -969,6 +1052,7 @@
             "id": 238,
             "nodeType": "EventDefinition",
             "src": "1237:45:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogPayoutWinningTeam",
@@ -1013,6 +1097,7 @@
             "id": 242,
             "nodeType": "EventDefinition",
             "src": "1287:50:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogPayoutFailedLowBalance",
@@ -1057,6 +1142,7 @@
             "id": 246,
             "nodeType": "EventDefinition",
             "src": "1342:40:1",
+            "nodes": [],
             "anonymous": false,
             "documentation": null,
             "name": "LogPayoutFailed",
@@ -1101,10 +1187,12 @@
             "id": 258,
             "nodeType": "ModifierDefinition",
             "src": "1388:92:1",
+            "nodes": [],
             "body": {
               "id": 257,
               "nodeType": "Block",
               "src": "1410:70:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -1252,10 +1340,12 @@
             "id": 306,
             "nodeType": "ModifierDefinition",
             "src": "1486:377:1",
+            "nodes": [],
             "body": {
               "id": 305,
               "nodeType": "Block",
               "src": "1508:355:1",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -1840,10 +1930,12 @@
             "id": 351,
             "nodeType": "FunctionDefinition",
             "src": "1920:412:1",
+            "nodes": [],
             "body": {
               "id": 350,
               "nodeType": "Block",
               "src": "1957:375:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -2430,10 +2522,12 @@
             "id": 403,
             "nodeType": "FunctionDefinition",
             "src": "2388:335:1",
+            "nodes": [],
             "body": {
               "id": 402,
               "nodeType": "Block",
               "src": "2458:265:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -3150,10 +3244,12 @@
             "id": 419,
             "nodeType": "FunctionDefinition",
             "src": "2754:119:1",
+            "nodes": [],
             "body": {
               "id": 418,
               "nodeType": "Block",
               "src": "2792:81:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -3366,10 +3462,12 @@
             "id": 476,
             "nodeType": "FunctionDefinition",
             "src": "2902:577:1",
+            "nodes": [],
             "body": {
               "id": 475,
               "nodeType": "Block",
               "src": "3019:460:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -4160,10 +4258,12 @@
             "id": 556,
             "nodeType": "FunctionDefinition",
             "src": "3531:883:1",
+            "nodes": [],
             "body": {
               "id": 555,
               "nodeType": "Block",
               "src": "3606:808:1",
+              "nodes": [],
               "statements": [
                 {
                   "assignments": [
@@ -5205,10 +5305,12 @@
             "id": 628,
             "nodeType": "FunctionDefinition",
             "src": "4480:759:1",
+            "nodes": [],
             "body": {
               "id": 627,
               "nodeType": "Block",
               "src": "4546:693:1",
+              "nodes": [],
               "statements": [
                 {
                   "body": {
@@ -6168,10 +6270,12 @@
             "id": 637,
             "nodeType": "FunctionDefinition",
             "src": "5245:97:1",
+            "nodes": [],
             "body": {
               "id": 636,
               "nodeType": "Block",
               "src": "5307:35:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -6262,10 +6366,12 @@
             "id": 648,
             "nodeType": "FunctionDefinition",
             "src": "5394:86:1",
+            "nodes": [],
             "body": {
               "id": 647,
               "nodeType": "Block",
               "src": "5421:59:1",
+              "nodes": [],
               "statements": [
                 {
                   "eventCall": {
@@ -6400,10 +6506,12 @@
             "id": 662,
             "nodeType": "FunctionDefinition",
             "src": "5486:104:1",
+            "nodes": [],
             "body": {
               "id": 661,
               "nodeType": "Block",
               "src": "5545:45:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -6562,10 +6670,12 @@
             "id": 678,
             "nodeType": "FunctionDefinition",
             "src": "5596:132:1",
+            "nodes": [],
             "body": {
               "id": 677,
               "nodeType": "Block",
               "src": "5656:72:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -6757,5 +6867,6 @@
         "scope": 680
       }
     ]
-  }
+  },
+  "id": 1
 }
