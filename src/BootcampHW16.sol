@@ -4,8 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@base64/base64.sol";
-//use import "base64-sol/base64.sol"; for remix
+import "base64-sol/base64.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract VolcanoNFT is ERC721URIStorage, Ownable {

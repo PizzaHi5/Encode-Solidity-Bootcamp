@@ -10,8 +10,62 @@
     "sourceMap": "",
     "linkReferences": {}
   },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Provides information about the current execution context, including the sender of the transaction and its data. While these are generally available via msg.sender and msg.data, they should not be accessed in such a direct manner, since when dealing with meta-transactions the account sending and paying for execution may not be the actual sender (as far as an application is concerned). This contract is only required for intermediate, library-like contracts.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/HW12/Ownable.sol\":\"Context\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\"]},\"sources\":{\"src/HW12/Ownable.sol\":{\"keccak256\":\"0xa320da2c7e1e858f6b3e5ead80be6920b02f6db1640a6f4641197ae9daee4862\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0e825a733c66d02004a14f01276cb674c89ad46317576566f1555b4f9dc77d5\",\"dweb:/ipfs/QmdQQzChWHReP8fvHhvb2CG22f4sFwoEvgfTZsh7pD7Hqo\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.0+commit.c7dfd78e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":base64-sol/=lib/base64/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/HW12/Ownable.sol": "Context"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/HW12/Ownable.sol": {
+        "keccak256": "0xa320da2c7e1e858f6b3e5ead80be6920b02f6db1640a6f4641197ae9daee4862",
+        "urls": [
+          "bzz-raw://f0e825a733c66d02004a14f01276cb674c89ad46317576566f1555b4f9dc77d5",
+          "dweb:/ipfs/QmdQQzChWHReP8fvHhvb2CG22f4sFwoEvgfTZsh7pD7Hqo"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
   "ast": {
-    "absolutePath": "/mnt/c/Users/PizzaHi5/Encode-Solidity-Bootcamp/src/HW12/Ownable.sol",
+    "absolutePath": "src/HW12/Ownable.sol",
     "id": 490,
     "exportedSymbols": {
       "Context": [
@@ -28,6 +82,7 @@
         "id": 418,
         "nodeType": "PragmaDirective",
         "src": "32:23:1",
+        "nodes": [],
         "literals": [
           "solidity",
           "^",
@@ -44,10 +99,12 @@
             "id": 428,
             "nodeType": "FunctionDefinition",
             "src": "586:96:1",
+            "nodes": [],
             "body": {
               "id": 427,
               "nodeType": "Block",
               "src": "648:34:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -136,10 +193,12 @@
             "id": 437,
             "nodeType": "FunctionDefinition",
             "src": "688:99:1",
+            "nodes": [],
             "body": {
               "id": 436,
               "nodeType": "Block",
               "src": "755:32:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -250,6 +309,7 @@
             "id": 443,
             "nodeType": "VariableDeclaration",
             "src": "1329:22:1",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_owner",
@@ -277,6 +337,7 @@
             "id": 449,
             "nodeType": "EventDefinition",
             "src": "1358:106:1",
+            "nodes": [],
             "anonymous": false,
             "name": "OwnershipTransferred",
             "parameters": {
@@ -347,10 +408,12 @@
             "id": 459,
             "nodeType": "FunctionDefinition",
             "src": "1566:63:1",
+            "nodes": [],
             "body": {
               "id": 458,
               "nodeType": "Block",
               "src": "1580:49:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -456,10 +519,12 @@
             "id": 468,
             "nodeType": "FunctionDefinition",
             "src": "1705:85:1",
+            "nodes": [],
             "body": {
               "id": 467,
               "nodeType": "Block",
               "src": "1760:30:1",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -541,10 +606,12 @@
             "id": 488,
             "nodeType": "FunctionDefinition",
             "src": "1944:187:1",
+            "nodes": [],
             "body": {
               "id": 487,
               "nodeType": "Block",
               "src": "2007:124:1",
+              "nodes": [],
               "statements": [
                 {
                   "assignments": [
@@ -800,5 +867,6 @@
       }
     ],
     "license": "MIT"
-  }
+  },
+  "id": 1
 }

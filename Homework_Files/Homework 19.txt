@@ -3,12 +3,25 @@ Write a 'shame coin' contract
 This will be similar to the ERC20 contract you have already written.
 1. The shame coin needs to have an administrator address that is set in the constructor.
 2. The decimal places should be set to 0.
+
+- Check! Check!
+
 . The administrator can send 1 shame coin at a time to other addresses (but keep the
 transfer function signature the same)
 . If non administrators try to transfer their shame coin, the transfer function will instead
 increase their balance by one.
+
+- Used the _afterTokenTransfer hook in ERC20 to pull this off
+
 . Non administrators can approve the administrator (and only the administrator) to
 spend one token on their behalf
 . The transfer from function should just reduce the balance of the holder.
+
+- Reduced my code line count significantly. Made transferFrom onlyOwner and added a require
+statement to ensure the owner has allowed the admin to transfer. The token should be moved
+just like a normal transferFrom. Since admin has the power to mint to any target
+address, transferFrom just moves the shame from one user to another. Admin also needs
+permission to burn a token. 
+
 . Write unit tests to show that the functionality is correct.
 . Document the contract with Natspec, and produce docs from this
