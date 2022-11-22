@@ -2018,8 +2018,8 @@
       }
     },
     "test/BootcampHW19.t.sol": {
-      "lastModificationDate": 1669079521676,
-      "contentHash": "4ae9e444241749d8a22d553e5ed3789c",
+      "lastModificationDate": 1669085766000,
+      "contentHash": "7051740fa90f16d0d142ec86c57e7cf1",
       "sourceName": "test/BootcampHW19.t.sol",
       "solcConfig": {
         "settings": {
@@ -2069,6 +2069,8 @@
         "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
         "src/BootcampHW19.sol"
       ],
       "versionRequirement": "^0.8.0",
