@@ -14,7 +14,7 @@ contract ShameCoinTest is Test {
         eg = new ShameCoin("Shame", "SHM", address(this));
         // Put effort into learning how to log with Foundry
         emit log(string(abi.encodePacked("ShameCoin owner is ", address(this).toHexString())));
-        emit log(string(abi.encodePacked("ShameCoin address is ", address(this).toHexString())));
+        emit log(string(abi.encodePacked("ShameCoin address is ", address(eg).toHexString())));
     }
 
     function testMint() public {
