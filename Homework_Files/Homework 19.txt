@@ -25,3 +25,8 @@ permission to burn a token.
 
 . Write unit tests to show that the functionality is correct.
 . Document the contract with Natspec, and produce docs from this
+
+- Took a lot of time learning the testing functions to call in Foundry, but I got it :)
+Use 'forge test -vv' to see the logs.
+
+- Reviewed Natspec and incorporated notes into my code!

@@ -1629,8 +1629,8 @@
       }
     },
     "src/BootcampHW19.sol": {
-      "lastModificationDate": 1669077649051,
-      "contentHash": "83bd5d64bd08315ecc917b932eb48a4b",
+      "lastModificationDate": 1669249810786,
+      "contentHash": "968cdcb693779314038d3eb0c1064b28",
       "sourceName": "src/BootcampHW19.sol",
       "solcConfig": {
         "settings": {
@@ -2018,8 +2018,8 @@
       }
     },
     "test/BootcampHW19.t.sol": {
-      "lastModificationDate": 1669085766000,
-      "contentHash": "7051740fa90f16d0d142ec86c57e7cf1",
+      "lastModificationDate": 1669248459316,
+      "contentHash": "6d23bab2cfdc74512d14ae4f76e8e9be",
       "sourceName": "test/BootcampHW19.t.sol",
       "solcConfig": {
         "settings": {
