@@ -13,10 +13,23 @@ Today we will just do the first stage.
 Main net details
 Uniswap V3 router address : 0xE592427A0AEce92De3Edee1F18E0157C05861564
 DAI stablecoin address : 0xE592427A0AEce92De3Edee1F18E0157C05861564
+- Router and DAI had same address, using this for Dai: 0x6B175474E89094C44Da98b954EedeAC495271d0F
 Binance Account : 0xDFd5293D8e347dFe59E90eFd55b2956a1343963d
+- USDC address : 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
 
 - A colleague posted this link as helpful for HW20
 https://docs.ethers.io/v5/single-page/
 - The frontend guy used this documentation heavily for interacting with the perp-curie
-contracts for my Chainlink Hackathon Fall 2022
+contracts for my Chainlink Hackathon Fall 2022 project
+
+- Started with: anvil --fork-url <alchemy url>
+    export Rouer=0xE592427A0AEce92De3Edee1F18E0157C05861564
+    export Dai=0x6B175474E89094C44Da98b954EedeAC495271d0F
+    export Bin=0xDFd5293D8e347dFe59E90eFd55b2956a1343963d
+- Exactly like what I did in Hw17 with Vitalik, 
+    cast rpc anvil_impersonateAccount $Bin
+
+- Next to find method signature for exactInputSingle and construct the exactInputSingleParams
+
+- Since I need to write unit test, making contract instead. 
 
