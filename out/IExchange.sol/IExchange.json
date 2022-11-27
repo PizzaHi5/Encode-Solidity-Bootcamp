@@ -1,0 +1,1516 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "accountBalance",
+          "type": "address"
+        }
+      ],
+      "name": "AccountBalanceChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "markTwap",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "indexTwap",
+          "type": "uint256"
+        }
+      ],
+      "name": "FundingUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint24",
+          "name": "maxTickCrossedWithinBlock",
+          "type": "uint24"
+        }
+      ],
+      "name": "MaxTickCrossedWithinBlockChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getAccountBalance",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "accountBalance",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        }
+      ],
+      "name": "getAllPendingFundingPayment",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "pendingFundingPayment",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getClearingHouseConfig",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "clearingHouse",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        }
+      ],
+      "name": "getMaxTickCrossedWithinBlock",
+      "outputs": [
+        {
+          "internalType": "uint24",
+          "name": "maxTickCrossedWithinBlock",
+          "type": "uint24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOrderBook",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "orderBook",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "trader",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        }
+      ],
+      "name": "getPendingFundingPayment",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "pendingFundingPayment",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "twapInterval",
+          "type": "uint32"
+        }
+      ],
+      "name": "getSqrtMarkTwapX96",
+      "outputs": [
+        {
+          "internalType": "uint160",
+          "name": "sqrtMarkTwapX96",
+          "type": "uint160"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        }
+      ],
+      "name": "isOverPriceSpread",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getAccountBalance()": "6896fabf",
+    "getAllPendingFundingPayment(address)": "80f57f11",
+    "getClearingHouseConfig()": "aa2a8294",
+    "getMaxTickCrossedWithinBlock(address)": "29386b7b",
+    "getOrderBook()": "b248c4ef",
+    "getPendingFundingPayment(address,address)": "cb379aa2",
+    "getSqrtMarkTwapX96(address,uint32)": "99e4a771",
+    "isOverPriceSpread(address)": "ff818011"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"accountBalance\",\"type\":\"address\"}],\"name\":\"AccountBalanceChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"markTwap\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"indexTwap\",\"type\":\"uint256\"}],\"name\":\"FundingUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint24\",\"name\":\"maxTickCrossedWithinBlock\",\"type\":\"uint24\"}],\"name\":\"MaxTickCrossedWithinBlockChanged\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"getAccountBalance\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"accountBalance\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"trader\",\"type\":\"address\"}],\"name\":\"getAllPendingFundingPayment\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"pendingFundingPayment\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getClearingHouseConfig\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"clearingHouse\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"}],\"name\":\"getMaxTickCrossedWithinBlock\",\"outputs\":[{\"internalType\":\"uint24\",\"name\":\"maxTickCrossedWithinBlock\",\"type\":\"uint24\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getOrderBook\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"orderBook\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"trader\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"}],\"name\":\"getPendingFundingPayment\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"pendingFundingPayment\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"twapInterval\",\"type\":\"uint32\"}],\"name\":\"getSqrtMarkTwapX96\",\"outputs\":[{\"internalType\":\"uint160\",\"name\":\"sqrtMarkTwapX96\",\"type\":\"uint160\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"baseToken\",\"type\":\"address\"}],\"name\":\"isOverPriceSpread\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"events\":{\"AccountBalanceChanged(address)\":{\"params\":{\"accountBalance\":\"The address of accountBalance contract\"}},\"FundingUpdated(address,uint256,uint256)\":{\"params\":{\"baseToken\":\"Address of the base token\",\"indexTwap\":\"The index twap price when the funding growth is updated\",\"markTwap\":\"The market twap price when the funding growth is updated\"}},\"MaxTickCrossedWithinBlockChanged(address,uint24)\":{\"params\":{\"baseToken\":\"Address of the base token\",\"maxTickCrossedWithinBlock\":\"Max tick allowed to be crossed within block when reducing position\"}}},\"kind\":\"dev\",\"methods\":{\"getAccountBalance()\":{\"returns\":{\"accountBalance\":\"`AccountBalance` contract address\"}},\"getAllPendingFundingPayment(address)\":{\"returns\":{\"pendingFundingPayment\":\"The pending funding payment of the trader. Positive value means the trader pays funding, negative value means the trader receives funding.\"}},\"getClearingHouseConfig()\":{\"returns\":{\"clearingHouse\":\"`ClearingHouseConfig` contract address\"}},\"getMaxTickCrossedWithinBlock(address)\":{\"params\":{\"baseToken\":\"Address of the base token\"},\"returns\":{\"maxTickCrossedWithinBlock\":\"The max ticks allowed to be crossed within a block when reducing position\"}},\"getOrderBook()\":{\"returns\":{\"orderBook\":\"`OrderBook` contract address\"}},\"getPendingFundingPayment(address,address)\":{\"details\":\"this is the view version of _updateFundingGrowth()\",\"returns\":{\"pendingFundingPayment\":\"The pending funding payment of a trader in one market, including liquidity & balance coefficients. Positive value means the trader pays funding, negative value means the trader receives funding.\"}},\"getSqrtMarkTwapX96(address,uint32)\":{\"details\":\"The return value is a X96 number\",\"params\":{\"baseToken\":\"Address of the base token\",\"twapInterval\":\"The time interval in seconds\"},\"returns\":{\"sqrtMarkTwapX96\":\"The square root of the market twap price\"}},\"isOverPriceSpread(address)\":{\"params\":{\"baseToken\":\"Address of the base token\"},\"returns\":{\"_0\":\"true if over the maximum price spread\"}}},\"version\":1},\"userdoc\":{\"events\":{\"AccountBalanceChanged(address)\":{\"notice\":\"Emitted when accountBalance is updated\"},\"FundingUpdated(address,uint256,uint256)\":{\"notice\":\"Emitted when the global funding growth is updated\"},\"MaxTickCrossedWithinBlockChanged(address,uint24)\":{\"notice\":\"Emitted when maxTickCrossedWithinBlock is updated\"}},\"kind\":\"user\",\"methods\":{\"getAccountBalance()\":{\"notice\":\"Get `AccountBalance` contract address\"},\"getAllPendingFundingPayment(address)\":{\"notice\":\"Get all the pending funding payment for a trader\"},\"getClearingHouseConfig()\":{\"notice\":\"Get `ClearingHouseConfig` contract address\"},\"getMaxTickCrossedWithinBlock(address)\":{\"notice\":\"Get the max ticks allowed to be crossed within a block when reducing position\"},\"getOrderBook()\":{\"notice\":\"Get `OrderBook` contract address\"},\"getPendingFundingPayment(address,address)\":{\"notice\":\"Get the pending funding payment for a trader in a given market\"},\"getSqrtMarkTwapX96(address,uint32)\":{\"notice\":\"Get the square root of the market twap price with the given time interval\"},\"isOverPriceSpread(address)\":{\"notice\":\"Check if current price spread between market price and index twap is over maximum price spread.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/mocks/IExchange.sol\":\"IExchange\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":v3-core/=lib/v3-core/\"]},\"sources\":{\"src/mocks/IExchange.sol\":{\"keccak256\":\"0x7c2f1d6b2521704e4f8cc006904eeaae5fd99a6549250eb5cf2fc095f6899140\",\"license\":\"GPL-3.0-or-later\",\"urls\":[\"bzz-raw://a86f8ea676b2c18cdab6165a01889d9a3bc872be909ef1e450153c75c5ef5040\",\"dweb:/ipfs/QmNX7y59aff1LjAH8onD3KTJw3yY5FjJq4bDiQ1Q5dheib\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.7.6+commit.7338295f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "accountBalance",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "AccountBalanceChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "markTwap",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "uint256",
+              "name": "indexTwap",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "FundingUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint24",
+              "name": "maxTickCrossedWithinBlock",
+              "type": "uint24",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "MaxTickCrossedWithinBlockChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAccountBalance",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "accountBalance",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getAllPendingFundingPayment",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "pendingFundingPayment",
+              "type": "int256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getClearingHouseConfig",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "clearingHouse",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMaxTickCrossedWithinBlock",
+          "outputs": [
+            {
+              "internalType": "uint24",
+              "name": "maxTickCrossedWithinBlock",
+              "type": "uint24"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOrderBook",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "orderBook",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "trader",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPendingFundingPayment",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "pendingFundingPayment",
+              "type": "int256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "twapInterval",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSqrtMarkTwapX96",
+          "outputs": [
+            {
+              "internalType": "uint160",
+              "name": "sqrtMarkTwapX96",
+              "type": "uint160"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "baseToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isOverPriceSpread",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getAccountBalance()": {
+            "returns": {
+              "accountBalance": "`AccountBalance` contract address"
+            }
+          },
+          "getAllPendingFundingPayment(address)": {
+            "returns": {
+              "pendingFundingPayment": "The pending funding payment of the trader. Positive value means the trader pays funding, negative value means the trader receives funding."
+            }
+          },
+          "getClearingHouseConfig()": {
+            "returns": {
+              "clearingHouse": "`ClearingHouseConfig` contract address"
+            }
+          },
+          "getMaxTickCrossedWithinBlock(address)": {
+            "params": {
+              "baseToken": "Address of the base token"
+            },
+            "returns": {
+              "maxTickCrossedWithinBlock": "The max ticks allowed to be crossed within a block when reducing position"
+            }
+          },
+          "getOrderBook()": {
+            "returns": {
+              "orderBook": "`OrderBook` contract address"
+            }
+          },
+          "getPendingFundingPayment(address,address)": {
+            "details": "this is the view version of _updateFundingGrowth()",
+            "returns": {
+              "pendingFundingPayment": "The pending funding payment of a trader in one market, including liquidity & balance coefficients. Positive value means the trader pays funding, negative value means the trader receives funding."
+            }
+          },
+          "getSqrtMarkTwapX96(address,uint32)": {
+            "details": "The return value is a X96 number",
+            "params": {
+              "baseToken": "Address of the base token",
+              "twapInterval": "The time interval in seconds"
+            },
+            "returns": {
+              "sqrtMarkTwapX96": "The square root of the market twap price"
+            }
+          },
+          "isOverPriceSpread(address)": {
+            "params": {
+              "baseToken": "Address of the base token"
+            },
+            "returns": {
+              "_0": "true if over the maximum price spread"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getAccountBalance()": {
+            "notice": "Get `AccountBalance` contract address"
+          },
+          "getAllPendingFundingPayment(address)": {
+            "notice": "Get all the pending funding payment for a trader"
+          },
+          "getClearingHouseConfig()": {
+            "notice": "Get `ClearingHouseConfig` contract address"
+          },
+          "getMaxTickCrossedWithinBlock(address)": {
+            "notice": "Get the max ticks allowed to be crossed within a block when reducing position"
+          },
+          "getOrderBook()": {
+            "notice": "Get `OrderBook` contract address"
+          },
+          "getPendingFundingPayment(address,address)": {
+            "notice": "Get the pending funding payment for a trader in a given market"
+          },
+          "getSqrtMarkTwapX96(address,uint32)": {
+            "notice": "Get the square root of the market twap price with the given time interval"
+          },
+          "isOverPriceSpread(address)": {
+            "notice": "Check if current price spread between market price and index twap is over maximum price spread."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@uniswap/=lib/v3-core/",
+        ":base64-sol/=lib/base64/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":v3-core/=lib/v3-core/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/mocks/IExchange.sol": "IExchange"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/mocks/IExchange.sol": {
+        "keccak256": "0x7c2f1d6b2521704e4f8cc006904eeaae5fd99a6549250eb5cf2fc095f6899140",
+        "urls": [
+          "bzz-raw://a86f8ea676b2c18cdab6165a01889d9a3bc872be909ef1e450153c75c5ef5040",
+          "dweb:/ipfs/QmNX7y59aff1LjAH8onD3KTJw3yY5FjJq4bDiQ1Q5dheib"
+        ],
+        "license": "GPL-3.0-or-later"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/mocks/IExchange.sol",
+    "id": 87,
+    "exportedSymbols": {
+      "IExchange": [
+        86
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "45:3571:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "45:22:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.7",
+          ".6"
+        ]
+      },
+      {
+        "id": 2,
+        "nodeType": "PragmaDirective",
+        "src": "68:19:0",
+        "nodes": [],
+        "literals": [
+          "abicoder",
+          "v2"
+        ]
+      },
+      {
+        "id": 86,
+        "nodeType": "ContractDefinition",
+        "src": "89:3526:0",
+        "nodes": [
+          {
+            "id": 11,
+            "nodeType": "EventDefinition",
+            "src": "395:85:0",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 3,
+              "nodeType": "StructuredDocumentation",
+              "src": "116:274:0",
+              "text": "@notice Emitted when the global funding growth is updated\n @param baseToken Address of the base token\n @param markTwap The market twap price when the funding growth is updated\n @param indexTwap The index twap price when the funding growth is updated"
+            },
+            "name": "FundingUpdated",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "baseToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11,
+                  "src": "416:25:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "markTwap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11,
+                  "src": "443:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "443:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "indexTwap",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11,
+                  "src": "461:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "415:64:0"
+            }
+          },
+          {
+            "id": 18,
+            "nodeType": "EventDefinition",
+            "src": "711:100:0",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 12,
+              "nodeType": "StructuredDocumentation",
+              "src": "486:220:0",
+              "text": "@notice Emitted when maxTickCrossedWithinBlock is updated\n @param baseToken Address of the base token\n @param maxTickCrossedWithinBlock Max tick allowed to be crossed within block when reducing position"
+            },
+            "name": "MaxTickCrossedWithinBlockChanged",
+            "parameters": {
+              "id": 17,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "baseToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18,
+                  "src": "750:25:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 13,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "750:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 16,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "maxTickCrossedWithinBlock",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18,
+                  "src": "777:32:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 15,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "777:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "749:61:0"
+            }
+          },
+          {
+            "id": 23,
+            "nodeType": "EventDefinition",
+            "src": "941:52:0",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 19,
+              "nodeType": "StructuredDocumentation",
+              "src": "817:119:0",
+              "text": "@notice Emitted when accountBalance is updated\n @param accountBalance The address of accountBalance contract"
+            },
+            "name": "AccountBalanceChanged",
+            "parameters": {
+              "id": 22,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "accountBalance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23,
+                  "src": "969:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "969:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "968:24:0"
+            }
+          },
+          {
+            "id": 31,
+            "nodeType": "FunctionDefinition",
+            "src": "1261:114:0",
+            "nodes": [],
+            "documentation": {
+              "id": 24,
+              "nodeType": "StructuredDocumentation",
+              "src": "1000:256:0",
+              "text": "@notice Get the max ticks allowed to be crossed within a block when reducing position\n @param baseToken Address of the base token\n @return maxTickCrossedWithinBlock The max ticks allowed to be crossed within a block when reducing position"
+            },
+            "functionSelector": "29386b7b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMaxTickCrossedWithinBlock",
+            "parameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 26,
+                  "mutability": "mutable",
+                  "name": "baseToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31,
+                  "src": "1299:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 25,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1299:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1298:19:0"
+            },
+            "returnParameters": {
+              "id": 30,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29,
+                  "mutability": "mutable",
+                  "name": "maxTickCrossedWithinBlock",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31,
+                  "src": "1341:32:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint24",
+                    "typeString": "uint24"
+                  },
+                  "typeName": {
+                    "id": 28,
+                    "name": "uint24",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1341:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint24",
+                      "typeString": "uint24"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1340:34:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 39,
+            "nodeType": "FunctionDefinition",
+            "src": "1631:106:0",
+            "nodes": [],
+            "documentation": {
+              "id": 32,
+              "nodeType": "StructuredDocumentation",
+              "src": "1381:245:0",
+              "text": "@notice Get all the pending funding payment for a trader\n @return pendingFundingPayment The pending funding payment of the trader.\n Positive value means the trader pays funding, negative value means the trader receives funding."
+            },
+            "functionSelector": "80f57f11",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAllPendingFundingPayment",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34,
+                  "mutability": "mutable",
+                  "name": "trader",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "1668:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1668:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1667:16:0"
+            },
+            "returnParameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "mutability": "mutable",
+                  "name": "pendingFundingPayment",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "1707:28:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1707:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1706:30:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 47,
+            "nodeType": "FunctionDefinition",
+            "src": "1960:75:0",
+            "nodes": [],
+            "documentation": {
+              "id": 40,
+              "nodeType": "StructuredDocumentation",
+              "src": "1743:212:0",
+              "text": "@notice Check if current price spread between market price and index twap is over maximum price spread.\n @param baseToken Address of the base token\n @return true if over the maximum price spread"
+            },
+            "functionSelector": "ff818011",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isOverPriceSpread",
+            "parameters": {
+              "id": 43,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42,
+                  "mutability": "mutable",
+                  "name": "baseToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47,
+                  "src": "1987:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 41,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1987:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1986:19:0"
+            },
+            "returnParameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47,
+                  "src": "2029:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 44,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2029:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2028:6:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 57,
+            "nodeType": "FunctionDefinition",
+            "src": "2433:146:0",
+            "nodes": [],
+            "documentation": {
+              "id": 48,
+              "nodeType": "StructuredDocumentation",
+              "src": "2041:387:0",
+              "text": "@notice Get the pending funding payment for a trader in a given market\n @dev this is the view version of _updateFundingGrowth()\n @return pendingFundingPayment The pending funding payment of a trader in one market,\n including liquidity & balance coefficients. Positive value means the trader pays funding,\n negative value means the trader receives funding."
+            },
+            "functionSelector": "cb379aa2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPendingFundingPayment",
+            "parameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50,
+                  "mutability": "mutable",
+                  "name": "trader",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "2467:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 49,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2467:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 52,
+                  "mutability": "mutable",
+                  "name": "baseToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "2483:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2483:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2466:35:0"
+            },
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55,
+                  "mutability": "mutable",
+                  "name": "pendingFundingPayment",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 57,
+                  "src": "2549:28:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 54,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2549:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2548:30:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 67,
+            "nodeType": "FunctionDefinition",
+            "src": "2902:116:0",
+            "nodes": [],
+            "documentation": {
+              "id": 58,
+              "nodeType": "StructuredDocumentation",
+              "src": "2585:312:0",
+              "text": "@notice Get the square root of the market twap price with the given time interval\n @dev The return value is a X96 number\n @param baseToken Address of the base token\n @param twapInterval The time interval in seconds\n @return sqrtMarkTwapX96 The square root of the market twap price"
+            },
+            "functionSelector": "99e4a771",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSqrtMarkTwapX96",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60,
+                  "mutability": "mutable",
+                  "name": "baseToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 67,
+                  "src": "2930:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 59,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2930:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 62,
+                  "mutability": "mutable",
+                  "name": "twapInterval",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 67,
+                  "src": "2949:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2949:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2929:40:0"
+            },
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "mutability": "mutable",
+                  "name": "sqrtMarkTwapX96",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 67,
+                  "src": "2993:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint160",
+                    "typeString": "uint160"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint160",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2993:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint160",
+                      "typeString": "uint160"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2992:25:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 73,
+            "nodeType": "FunctionDefinition",
+            "src": "3132:66:0",
+            "nodes": [],
+            "documentation": {
+              "id": 68,
+              "nodeType": "StructuredDocumentation",
+              "src": "3028:99:0",
+              "text": "@notice Get `OrderBook` contract address\n @return orderBook `OrderBook` contract address"
+            },
+            "functionSelector": "b248c4ef",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getOrderBook",
+            "parameters": {
+              "id": 69,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3153:2:0"
+            },
+            "returnParameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 71,
+                  "mutability": "mutable",
+                  "name": "orderBook",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 73,
+                  "src": "3179:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 70,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3179:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3178:19:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 79,
+            "nodeType": "FunctionDefinition",
+            "src": "3323:76:0",
+            "nodes": [],
+            "documentation": {
+              "id": 74,
+              "nodeType": "StructuredDocumentation",
+              "src": "3204:114:0",
+              "text": "@notice Get `AccountBalance` contract address\n @return accountBalance `AccountBalance` contract address"
+            },
+            "functionSelector": "6896fabf",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAccountBalance",
+            "parameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3349:2:0"
+            },
+            "returnParameters": {
+              "id": 78,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 77,
+                  "mutability": "mutable",
+                  "name": "accountBalance",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 79,
+                  "src": "3375:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 76,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3375:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3374:24:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 85,
+            "nodeType": "FunctionDefinition",
+            "src": "3533:80:0",
+            "nodes": [],
+            "documentation": {
+              "id": 80,
+              "nodeType": "StructuredDocumentation",
+              "src": "3405:123:0",
+              "text": "@notice Get `ClearingHouseConfig` contract address\n @return clearingHouse `ClearingHouseConfig` contract address"
+            },
+            "functionSelector": "aa2a8294",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getClearingHouseConfig",
+            "parameters": {
+              "id": 81,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3564:2:0"
+            },
+            "returnParameters": {
+              "id": 84,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 83,
+                  "mutability": "mutable",
+                  "name": "clearingHouse",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 85,
+                  "src": "3590:21:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 82,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3590:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3589:23:0"
+            },
+            "scope": 86,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          86
+        ],
+        "name": "IExchange",
+        "scope": 87
+      }
+    ],
+    "license": "GPL-3.0-or-later"
+  },
+  "id": 0
+}
