@@ -21,7 +21,6 @@ contract UniswapTest is Test {
 
     /// @dev Swapping DAI for USDC
     function testExactInputSingleDAItoUSDC() public {
-
     startHoax(busd);
     (bool temp, bytes memory data) = router.call(abi.encodeWithSignature(
         "exactInputSingle(ExactInputSingleParams)", 
@@ -40,7 +39,7 @@ contract UniswapTest is Test {
     emit log_bytes(data);
 
     /// @dev Checking USDC balance post swap
-    (bool temp, bytes memory data) = usdc.call(abi.encodeWithSignature("balanceOf(address)", address(this)));
+    (temp, data) = usdc.call(abi.encodeWithSignature("balanceOf(address)", address(this)));
     assertTrue(temp, "USDC call failed");
     emit log_bytes(data);
     }
