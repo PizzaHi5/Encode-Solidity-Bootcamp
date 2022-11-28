@@ -46,8 +46,26 @@ contract UniswapTest is Test {
 
     /// @dev Swapping DAI to BUSD
     function testExactInputSingleDAItoBUSD() public {
+    startHoax(busd);
+    (bool temp, bytes memory data) = router.call(abi.encodeWithSignature(
+        "exactInputSingle(ExactInputSingleParams)", 
+        ISwapRouter.ExactInputSingleParams(
+            dai,
+            busd,
+            3000,
+            msg.sender,
+            99999999,
+            100,
+            0,
+            0
+        )
+    ));
+    assertTrue(temp, "Router call failed");
+    emit log_bytes(data);
 
-    //emit log(string(abi.encodePacked("Target Address Tokens: ", busd.balanceOf(address(this)).toString())));
-
+    /// @dev Checking DAI balance post swap
+    (temp, data) = dai.call(abi.encodeWithSignature("balanceOf(address)", address(this)));
+    assertTrue(temp, "DAI call failed");
+    emit log_bytes(data);
     }
 }
