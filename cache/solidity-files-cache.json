@@ -1352,6 +1352,46 @@
         }
       }
     },
+    "lib/v3-core/contracts/interfaces/IUniswapV3Factory.sol": {
+      "lastModificationDate": 1669583127526,
+      "contentHash": "f0eeb76e5ae42bcbacc8efc10e091716",
+      "sourceName": "lib/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV3Factory": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "IUniswapV3Factory.sol/IUniswapV3Factory.json"
+        }
+      }
+    },
     "lib/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol": {
       "lastModificationDate": 1669583127581,
       "contentHash": "a8ba2d37b0107911ae0e3b0e123cbd83",
@@ -1389,6 +1429,46 @@
       "artifacts": {
         "IUniswapV3SwapCallback": {
           "0.8.13+commit.abaa5c0e.Linux.gcc": "IUniswapV3SwapCallback.sol/IUniswapV3SwapCallback.json"
+        }
+      }
+    },
+    "lib/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
+      "lastModificationDate": 1669583127640,
+      "contentHash": "0488495ef9087b4513d3b43634035ef9",
+      "sourceName": "lib/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV3PoolState": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "IUniswapV3PoolState.sol/IUniswapV3PoolState.json"
         }
       }
     },
@@ -1711,6 +1791,50 @@
       "artifacts": {
         "ShameCoin": {
           "0.8.13+commit.abaa5c0e.Linux.gcc": "BootcampHW19.sol/ShameCoin.json"
+        }
+      }
+    },
+    "src/BootcampHW21.sol": {
+      "lastModificationDate": 1669769960404,
+      "contentHash": "2f8b15e0a1dea13928af7565c91d211a",
+      "sourceName": "src/BootcampHW21.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol",
+        "lib/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol",
+        "src/interfaces/ISwapRouter.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "InteractWithUniswap": {
+          "0.8.13+commit.abaa5c0e.Linux.gcc": "BootcampHW21.sol/InteractWithUniswap.json"
         }
       }
     },
@@ -2221,8 +2345,8 @@
       }
     },
     "test/BootcampHw20.t.sol": {
-      "lastModificationDate": 1669594386085,
-      "contentHash": "1c0ce8d8c93c649b357afcdd2f2da5de",
+      "lastModificationDate": 1669773735870,
+      "contentHash": "994e1c27870f4b8242c3ca1f872e5574",
       "sourceName": "test/BootcampHw20.t.sol",
       "solcConfig": {
         "settings": {
@@ -2267,9 +2391,13 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
         "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
         "lib/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol",
+        "lib/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol",
+        "src/BootcampHW21.sol",
         "src/interfaces/ISwapRouter.sol"
       ],
       "versionRequirement": "^0.8.0",
