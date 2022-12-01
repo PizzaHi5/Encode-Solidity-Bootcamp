@@ -13,7 +13,8 @@ contract InteractWithUniswap {
     address token2, 
     //address pool,
     address router, 
-    uint256 amount) 
+    uint256 amount,
+    uint24 fee) 
     public returns (uint256) {
         //(uint160 price,,,,,,) = IUniswapV3PoolState(pool).slot0();
 
@@ -21,12 +22,18 @@ contract InteractWithUniswap {
             ISwapRouter.ExactInputSingleParams(
             token1,
             token2,
-            3000,
+            fee,
             msg.sender,
-            99999999,
+            getMaxUint256(),
             amount,
             0,
             0 //price
         ));
+    }
+
+    function getMaxUint256() public pure returns (uint256) {
+        unchecked {
+            return uint256(0) - 1;
+        }
     }
 }

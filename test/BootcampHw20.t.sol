@@ -23,17 +23,17 @@ contract UniswapTest is Test {
     address constant uniFactory = 0x1F98431c8aD98523631AE4a59f267346ea31F984;
     InteractWithUniswap eg;
 
-    //stuck, need to figure out how to get cast to deploy/call these test contract methods
     function setUp() public {
         eg = new InteractWithUniswap();
+        startHoax(busd);
     }
 
     /// @dev 2 Unit tests for makeASingleSwap for Homework 21
     function testMakeABUSDSwap() public {
         /// @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip
-        //address pool = IUniswapV3Factory(uniFactory).getPool(dai, busd, 3000); //3000 = 3% fee in bip?
-
-        uint256 amount = eg.makeASingleSwap(dai, busd, router, 100);
+        //address pool = IUniswapV3Factory(uniFactory).getPool(dai, busd, 3000); //300 = 3% fee in bip?
+        uint24 fee = 300;
+        uint256 amount = eg.makeASingleSwap(dai, busd, router, 10, fee);
         assertTrue(amount >= 0);
         emit log_bytes(abi.encodePacked("Swapped: ", amount.toHexString()));
         emit log_bytes(abi.encodePacked("BUSD Balance: ", IERC20(busd).balanceOf(address(this)).toHexString()));
@@ -41,8 +41,8 @@ contract UniswapTest is Test {
 
     function testMakeAUSDCSwap() public {
         //address pool = IUniswapV3Factory(uniFactory).getPool(dai, usdc, 3000);
-
-        uint256 amount = eg.makeASingleSwap(dai, usdc, router, 100);
+        uint24 fee = 3000;
+        uint256 amount = eg.makeASingleSwap(dai, usdc, router, 10, fee);
         assertTrue(amount > 0);
         emit log_bytes(abi.encodePacked("Swapped: ", amount.toHexString()));
         emit log_bytes(abi.encodePacked("USDC Balance: ", IERC20(usdc).balanceOf(address(this)).toHexString()));
@@ -53,16 +53,15 @@ contract UniswapTest is Test {
            Swapping DAI for USDC using address calls
     */
     function testExactInputSingleDAItoUSDC() public {
-    startHoax(busd);
-    (bool temp, bytes memory data) = router.call(abi.encodeWithSignature(
-        "exactInputSingle(ExactInputSingleParams)", 
+    (bool temp, bytes memory data) = router.call(abi.encodeWithSelector(
+        0x414bf389, //got selector off Uniswap Router on etherscan
         ISwapRouter.ExactInputSingleParams(
             dai,
             usdc,
-            3000,
+            3000, //guessed the correct fee amount
             msg.sender,
-            99999999,
-            100,
+            getMaxUint256(),
+            10,
             0,
             0
         )
@@ -78,16 +77,15 @@ contract UniswapTest is Test {
 
     /// @dev Swapping DAI to BUSD using address calls
     function testExactInputSingleDAItoBUSD() public {
-    startHoax(busd);
-    (bool temp, bytes memory data) = router.call(abi.encodeWithSignature(
-        "exactInputSingle(ExactInputSingleParams)", 
+    (bool temp, bytes memory data) = router.call(abi.encodeWithSelector(
+        0x414bf389, //got selector off Uniswap Router on etherscan
         ISwapRouter.ExactInputSingleParams(
             dai,
             busd,
-            3000,
+            300, //fee is incorrect, need to figure out what this is
             msg.sender,
-            99999999,
-            100,
+            getMaxUint256(),
+            10,
             0,
             0
         )
@@ -99,5 +97,11 @@ contract UniswapTest is Test {
     (temp, data) = dai.call(abi.encodeWithSignature("balanceOf(address)", address(this)));
     assertTrue(temp, "DAI call failed");
     emit log_bytes(data);
+    }
+
+    function getMaxUint256() public pure returns (uint256) {
+        unchecked {
+            return uint256(0) - 1;
+        }
     }
 }

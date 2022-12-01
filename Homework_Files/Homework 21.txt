@@ -13,4 +13,21 @@ involved ?
     compiles correctly however when I test, EVM fails. I suspect it has something to do with the ABIs
     for those addresses? I commented it out to try to make things simpler. 
 
-- 
+- I figured out how to specify my rpc url in the foundry.toml. Now I should be able to execute functions
+    on my forked mainnet from the addresses I have provided with 'forge test' instead of using anvil and cast. 
+    Got interesting errors:
+    Assertion Failed and Transaction too old
+
+- Figured out the 'transaction too old' error comes from File 7 of 34 : PeripheryValidation.sol, my deadline
+    needs to be increased. 99999999 is not enough. Wrote unchecked function that returns maxUint256 value.
+
+- Got a STF error from testMakeAUSDCSwap meaning the USDC transfer failed, the testMakeABUSDSwap is EVM erroring
+    File 28 of 34 : TransferHelper.sol
+
+- Figured out the Assertion Failed errors. The address calls were failing.
+
+- Changed the router calls form abi.encodeWithSignature to abi.encodeWithSelector using the method signature on
+    etherscan. Got different results.
+
+- forge test -vvv helped some to debug this mess. Seems I am calling exactInputSingle incorrectly and the
+    msg.sender does not have any dai or usdc
