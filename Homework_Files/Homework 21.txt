@@ -4,3 +4,13 @@ Interacting with DeFi continued
 interact with Uniswap.
 2. Is it better to do one large trade or split it into two smaller trades in terms of the costs
 involved ?
+
+- Wrote a test script from the Unit tests in Hw20 that the test contract calls.
+
+- I got Uniswap Factory off etherscan and tried to call its getPool function using IUniswapV3Factory.
+    With the correct fee, dai, and busd addresses, this should return the pool address I need to get
+    the current market price using IUniswapV3PoolState(pool).slot0() to make a swap. Everything
+    compiles correctly however when I test, EVM fails. I suspect it has something to do with the ABIs
+    for those addresses? I commented it out to try to make things simpler. 
+
+- 

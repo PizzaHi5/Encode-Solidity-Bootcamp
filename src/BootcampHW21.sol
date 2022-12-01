@@ -4,16 +4,18 @@ pragma solidity ^0.8.0;
 import "./interfaces/ISwapRouter.sol";
 import "@uniswap/contracts/interfaces/pool/IUniswapV3PoolState.sol";
 
+/// @notice This is intended to make a single swap that anyone can call
 contract InteractWithUniswap {
     
+    /// @dev Commented out pool info, ran into issues with executing
     function makeASingleSwap(
     address token1, 
     address token2, 
-    address pool,
+    //address pool,
     address router, 
     uint256 amount) 
     public returns (uint256) {
-        (uint160 price,,,,,,) = IUniswapV3PoolState(pool).slot0();
+        //(uint160 price,,,,,,) = IUniswapV3PoolState(pool).slot0();
 
         return ISwapRouter(router).exactInputSingle(
             ISwapRouter.ExactInputSingleParams(
@@ -23,8 +25,8 @@ contract InteractWithUniswap {
             msg.sender,
             99999999,
             amount,
-            amount/10,
-            price
+            0,
+            0 //price
         ));
     }
 }
