@@ -31,3 +31,5 @@ involved ?
 
 - forge test -vvv helped some to debug this mess. Seems I am calling exactInputSingle incorrectly and the
     msg.sender does not have any dai or usdc
+
+- I have spent a ton of hours trying to figure this out. Proud of myself for where I got :)
