@@ -33,3 +33,35 @@ involved ?
     msg.sender does not have any dai or usdc
 
 - I have spent a ton of hours trying to figure this out. Proud of myself for where I got :)
+
+Several Days Later
+- I GOT HELP! :D
+- Met with Rod and Sanji with SideKik using their product to help solve my problems!
+    https://app.sidekik.xyz/
+
+- Process
+    Pulled up reference documentation:
+    https://docs.sidekik.xyz/setup/overview/how-to-save-contract-addresses-to-disk/foundry
+    Followed the reference documents above for the beginning
+
+    Started up my local chain with anvil --rpc-url <url>
+    SideKik connects to the local network via Microsoft Edge browser
+    For deploying local contracts, ran:
+
+    forge create --rpc-url http://127.0.0.1:8545 InteractWithUniswap --unlocked --from 
+    0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 --json > InteractWithUniswap.json
+
+    InteractWithUniswap is my contract in BootcampHW21 and the address is from Foundry documentation
+    https://book.getfoundry.sh/forge/cheatcodes
+    This process created some json files
+
+    Deploying made it available for SideKik to pick up. Following SideKik UI, I manually entered the
+    contracts for DAI, Binance, BUSD, USDC, and the Router getting the ABIs off etherscan. I impersonated
+    binance thru the top drop down by putting in their address. I also entered the InteractWithUniswap
+    by uploading the file and copy/pasting the ABI from the 'out' folder in foundry.
+
+    This gave me access to see all the functions available on all these contracts and allowed me to send
+    transactions using my own InteractWithUniswap contract (for this HW) as well as the contracts themselves 
+    directly through a nice UI. This made it far easier to debug all the problems I was running into. 
+
+    Succeeded in executing a transaction! :)

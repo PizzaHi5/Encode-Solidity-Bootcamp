@@ -6,7 +6,6 @@ import "@uniswap/contracts/interfaces/pool/IUniswapV3PoolState.sol";
 
 /// @notice This is intended to make a single swap that anyone can call
 contract InteractWithUniswap {
-    
     /// @dev Commented out pool info, ran into issues with executing
     function makeASingleSwap(
     address token1, 

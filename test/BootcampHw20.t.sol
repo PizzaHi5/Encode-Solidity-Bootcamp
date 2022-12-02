@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@uniswap/contracts/interfaces/IUniswapV3Factory.sol";
 
 /**  @notice This contract makes calls to defined mainnet addresses and tests
-        for 2 exactInputSingle swaps from DAI to USDC and DAI to BUSD
+        for 2 exactInputSingle swaps from DAI to USDC and DAI to binance
 */ 
 contract UniswapTest is Test {
     using Strings for address;
@@ -17,7 +17,9 @@ contract UniswapTest is Test {
 
     address constant router = 0xE592427A0AEce92De3Edee1F18E0157C05861564;
     address constant dai = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
-    address constant busd = 0xDFd5293D8e347dFe59E90eFd55b2956a1343963d;
+    address constant busd = 0x4Fabb145d64652a948d72533023f6E7A623C7C53;
+    //this is a holder address, not the token
+    address constant binance = 0xDFd5293D8e347dFe59E90eFd55b2956a1343963d;
     address constant usdc = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
 
     address constant uniFactory = 0x1F98431c8aD98523631AE4a59f267346ea31F984;
@@ -25,24 +27,24 @@ contract UniswapTest is Test {
 
     function setUp() public {
         eg = new InteractWithUniswap();
-        startHoax(busd);
+        startHoax(binance);
     }
 
     /// @dev 2 Unit tests for makeASingleSwap for Homework 21
-    function testMakeABUSDSwap() public {
+    function testMakeABusdSwap() public {
         /// @param fee The fee collected upon every swap in the pool, denominated in hundredths of a bip
-        //address pool = IUniswapV3Factory(uniFactory).getPool(dai, busd, 3000); //300 = 3% fee in bip?
+        //address pool = IUniswapV3Factory(uniFactory).getPool(dai, binance, 3000); //300 = 3% fee in bip?
         uint24 fee = 300;
         uint256 amount = eg.makeASingleSwap(dai, busd, router, 10, fee);
         assertTrue(amount >= 0);
         emit log_bytes(abi.encodePacked("Swapped: ", amount.toHexString()));
-        emit log_bytes(abi.encodePacked("BUSD Balance: ", IERC20(busd).balanceOf(address(this)).toHexString()));
+        emit log_bytes(abi.encodePacked("binance Balance: ", IERC20(binance).balanceOf(address(this)).toHexString()));
     }
 
     function testMakeAUSDCSwap() public {
         //address pool = IUniswapV3Factory(uniFactory).getPool(dai, usdc, 3000);
         uint24 fee = 3000;
-        uint256 amount = eg.makeASingleSwap(dai, usdc, router, 10, fee);
+        uint256 amount = eg.makeASingleSwap(dai, busd, router, 10, fee);
         assertTrue(amount > 0);
         emit log_bytes(abi.encodePacked("Swapped: ", amount.toHexString()));
         emit log_bytes(abi.encodePacked("USDC Balance: ", IERC20(usdc).balanceOf(address(this)).toHexString()));
@@ -75,7 +77,7 @@ contract UniswapTest is Test {
     emit log_bytes(data);
     }
 
-    /// @dev Swapping DAI to BUSD using address calls
+    /// @dev Swapping DAI to busd using address calls
     function testExactInputSingleDAItoBUSD() public {
     (bool temp, bytes memory data) = router.call(abi.encodeWithSelector(
         0x414bf389, //got selector off Uniswap Router on etherscan
