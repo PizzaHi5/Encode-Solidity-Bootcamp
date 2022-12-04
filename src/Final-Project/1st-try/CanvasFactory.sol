@@ -66,6 +66,7 @@ contract CanvasFactory is ERC721, Owned {
         address operator,
         bool approved
     ) public virtual override {
+        //not sure what you are trying to check for here
         //require(fromCanvas(_tokenId), "NOT_AUTHORIZED");
         super.setApprovalForAll(operator, approved);
     }
@@ -132,14 +133,3 @@ contract CanvasFactory is ERC721, Owned {
         return (msg.sender == canvases[_tokenId]);
     }
 }
-/* Duplicate implementation of ERC721
-abstract contract ERC721TokenReceiver {
-    function onERC721Received(
-        address,
-        address,
-        uint256,
-        bytes calldata
-    ) external virtual returns (bytes4) {
-        return ERC721TokenReceiver.onERC721Received.selector;
-    }
-}*/

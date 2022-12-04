@@ -1,0 +1,116 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d186df07e9c2ea49d5994d23ab13823005497326d31ce44a939a3740e82fd9e964736f6c63430008110033",
+    "sourceMap": "57:74:5:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea2646970667358221220d186df07e9c2ea49d5994d23ab13823005497326d31ce44a939a3740e82fd9e964736f6c63430008110033",
+    "sourceMap": "57:74:5:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Final-Project/Paywall.sol\":\"Paywall\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=lib/contracts/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@solmate/=lib/solmate/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\",\":v3-core/=lib/v3-core/\"]},\"sources\":{\"src/Final-Project/Paywall.sol\":{\"keccak256\":\"0x876defb473dea055206c4c673378d9023fe0a160677b641e50c7edd0f51e4e07\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d0a39add073a2d616c1864223b5157a0cf98c134d3f663c93a5dc192d6c9d97c\",\"dweb:/ipfs/QmXLixMjFcmUBNWvdUWKh5kUigHT47DeDcfjnsufeHMUx8\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=lib/contracts/",
+        ":@forge-std/=lib/forge-std/src/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@solmate/=lib/solmate/",
+        ":@uniswap/=lib/v3-core/",
+        ":base64-sol/=lib/base64/",
+        ":base64/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":solmate/=lib/solmate/src/",
+        ":v3-core/=lib/v3-core/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Final-Project/Paywall.sol": "Paywall"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Final-Project/Paywall.sol": {
+        "keccak256": "0x876defb473dea055206c4c673378d9023fe0a160677b641e50c7edd0f51e4e07",
+        "urls": [
+          "bzz-raw://d0a39add073a2d616c1864223b5157a0cf98c134d3f663c93a5dc192d6c9d97c",
+          "dweb:/ipfs/QmXLixMjFcmUBNWvdUWKh5kUigHT47DeDcfjnsufeHMUx8"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Final-Project/Paywall.sol",
+    "id": 768,
+    "exportedSymbols": {
+      "Paywall": [
+        767
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:99:5",
+    "nodes": [
+      {
+        "id": 766,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:5",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 767,
+        "nodeType": "ContractDefinition",
+        "src": "57:74:5",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Paywall",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          767
+        ],
+        "name": "Paywall",
+        "nameLocation": "66:7:5",
+        "scope": 768,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 5
+}
