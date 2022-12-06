@@ -159,17 +159,17 @@
   },
   "ast": {
     "absolutePath": "src/Final-Project/ICalculateNAV.sol",
-    "id": 26782,
+    "id": 26780,
     "exportedSymbols": {
       "ICalculateNAV": [
-        26781
+        26779
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:239:25",
     "nodes": [
       {
-        "id": 26763,
+        "id": 26761,
         "nodeType": "PragmaDirective",
         "src": "32:23:25",
         "nodes": [],
@@ -180,12 +180,12 @@
         ]
       },
       {
-        "id": 26781,
+        "id": 26779,
         "nodeType": "ContractDefinition",
         "src": "57:214:25",
         "nodes": [
           {
-            "id": 26770,
+            "id": 26768,
             "nodeType": "FunctionDefinition",
             "src": "87:68:25",
             "nodes": [],
@@ -196,17 +196,17 @@
             "name": "registerPriceFeed",
             "nameLocation": "96:17:25",
             "parameters": {
-              "id": 26768,
+              "id": 26766,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26765,
+                  "id": 26763,
                   "mutability": "mutable",
                   "name": "_priceFeed",
                   "nameLocation": "122:10:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26770,
+                  "scope": 26768,
                   "src": "114:18:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -215,7 +215,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 26764,
+                    "id": 26762,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "114:7:25",
@@ -229,12 +229,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26767,
+                  "id": 26765,
                   "mutability": "mutable",
                   "name": "_isV3",
                   "nameLocation": "139:5:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26770,
+                  "scope": 26768,
                   "src": "134:10:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -243,7 +243,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 26766,
+                    "id": 26764,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "134:4:25",
@@ -258,18 +258,18 @@
               "src": "113:32:25"
             },
             "returnParameters": {
-              "id": 26769,
+              "id": 26767,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "154:0:25"
             },
-            "scope": 26781,
+            "scope": 26779,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 26780,
+            "id": 26778,
             "nodeType": "FunctionDefinition",
             "src": "160:109:25",
             "nodes": [],
@@ -280,17 +280,17 @@
             "name": "calculateNAV",
             "nameLocation": "169:12:25",
             "parameters": {
-              "id": 26776,
+              "id": 26774,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26773,
+                  "id": 26771,
                   "mutability": "mutable",
                   "name": "_priceFeeds",
                   "nameLocation": "201:11:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26780,
+                  "scope": 26778,
                   "src": "182:30:25",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -300,7 +300,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 26771,
+                      "id": 26769,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "182:7:25",
@@ -310,7 +310,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 26772,
+                    "id": 26770,
                     "nodeType": "ArrayTypeName",
                     "src": "182:9:25",
                     "typeDescriptions": {
@@ -322,12 +322,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 26775,
+                  "id": 26773,
                   "mutability": "mutable",
                   "name": "_baseToken",
                   "nameLocation": "222:10:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26780,
+                  "scope": 26778,
                   "src": "214:18:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -336,7 +336,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 26774,
+                    "id": 26772,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "214:7:25",
@@ -352,17 +352,17 @@
               "src": "181:52:25"
             },
             "returnParameters": {
-              "id": 26779,
+              "id": 26777,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 26778,
+                  "id": 26776,
                   "mutability": "mutable",
                   "name": "nav",
                   "nameLocation": "264:3:25",
                   "nodeType": "VariableDeclaration",
-                  "scope": 26780,
+                  "scope": 26778,
                   "src": "257:10:25",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -371,7 +371,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 26777,
+                    "id": 26775,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "257:6:25",
@@ -385,7 +385,7 @@
               ],
               "src": "256:12:25"
             },
-            "scope": 26781,
+            "scope": 26779,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -398,11 +398,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          26781
+          26779
         ],
         "name": "ICalculateNAV",
         "nameLocation": "67:13:25",
-        "scope": 26782,
+        "scope": 26780,
         "usedErrors": []
       }
     ],

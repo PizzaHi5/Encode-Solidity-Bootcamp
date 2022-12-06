@@ -12,10 +12,12 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
     constructor(
     string memory _name, 
     string memory _symbol, 
-    uint8 _decimals, 
+    uint8 _decimals,
+    uint256 amount, 
     address _calcNav
     ) ERC20 (_name, _symbol, _decimals) {
         calcNav =_calcNav;
+        _mint(msg.sender, amount);
     }
 
     function mint(uint256 amount) public payable {

@@ -28,14 +28,16 @@ contract ETFERC20Test is Test {
 
     function testAddTrackedPriceFeeds() public {
         eg.addTrackedPriceFeeds(priceFeeds[0], true);
+    }
+
+    function testCalculateNAV() public {
+        eg.addTrackedPriceFeeds(priceFeeds[0], true);
         eg.addTrackedPriceFeeds(priceFeeds[1], true);
         eg.addTrackedPriceFeeds(priceFeeds[2], true);
         eg.addTrackedPriceFeeds(priceFeeds[3], true);
         eg.addTrackedPriceFeeds(priceFeeds[4], true);
 
-    }
-
-    function testCalculateNAV() public {
+        //figure out whats going on here
         int nav = ek.calculateNAV(priceFeeds, address(eg));
         emit log_int(nav);
     }

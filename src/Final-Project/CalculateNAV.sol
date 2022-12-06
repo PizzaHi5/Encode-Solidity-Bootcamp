@@ -7,10 +7,11 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./ICalculateNAV.sol";
 
 /// @notice This contract returns the NAV value based on tracked underlying assets that owner controls
-contract CalculateNAV is ICalculateNAV, Owned(msg.sender) {
+contract CalculateNAV is ICalculateNAV {
     mapping(address => bool) isV3;
 
-    function registerPriceFeed(address _priceFeed, bool _isV3) external onlyOwner {
+    /// @dev Anyone can change this boolean atm
+    function registerPriceFeed(address _priceFeed, bool _isV3) external {
         isV3[_priceFeed] = _isV3;
     }
 
