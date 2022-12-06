@@ -9,6 +9,8 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
     address[] public trackedPriceFeeds;
     address public calcNav;
 
+    mapping(address => address) feedToToken;
+
     constructor(
     string memory _name, 
     string memory _symbol, 
@@ -20,9 +22,17 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
         _mint(msg.sender, amount);
     }
 
-    function mint(uint256 amount) public payable {
-        require(msg.value >= amount * uint256(ICalculateNAV(calcNav).calculateNAV(trackedPriceFeeds, address(this))));
+    function mintWithEth(uint256 amount) public payable {
+        require(msg.value >= amount * uint256(ICalculateNAV(calcNav).calculateNAV(
+            trackedPriceFeeds, 
+            constructArray(trackedPriceFeeds), 
+            address(this))));
+
         _mint(msg.sender, amount);
+    }
+
+    function mintWithRegisterToken(uint256 amount, address token) public payable {
+        //insert logic here
     }
 
     function burn(uint256 amount) public payable {
@@ -31,13 +41,32 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
         //return locked eth to sender
     }
 
-    function addTrackedPriceFeeds(address priceFeed, bool isV3) external onlyOwner {
+    function checkNAV() external view returns (int256) {
+        return ICalculateNAV(calcNav).calculateNAV(
+            trackedPriceFeeds, 
+            constructArray(trackedPriceFeeds), 
+            address(this));
+    }
+
+    /// @dev Sets index 0 to always be the ETH pricefeed
+    function addETHPriceFeed(address priceFeed) external onlyOwner {
+        //check if priceFeeds has values, if does, set index 0 instead of push
+        trackedPriceFeeds.push(priceFeed);
+    }
+
+    function addTrackedPriceFeeds(address priceFeed, address feedToken) external onlyOwner {
         //require IsContract
         trackedPriceFeeds.push(priceFeed);
-        ICalculateNAV(calcNav).registerPriceFeed(priceFeed, isV3);
+        feedToToken[priceFeed] = feedToken;
     }
 
     function updateCalcNav(address _calcNav) external onlyOwner {
         calcNav = _calcNav;
+    }
+
+    function constructArray(address[] memory priceFeeds) public view returns (address[] memory tokens) {
+        for(uint i = 0; i < priceFeeds.length - 1; i++) {
+            tokens[i] = feedToToken[priceFeeds[i + 1]];
+        }
     }
 }

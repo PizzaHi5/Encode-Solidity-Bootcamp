@@ -8,29 +8,30 @@ import "./ICalculateNAV.sol";
 
 /// @notice This contract returns the NAV value based on tracked underlying assets that owner controls
 contract CalculateNAV is ICalculateNAV {
-    mapping(address => bool) isV3;
+    /** 
+        @param priceFeeds should all have the same denomination (I.E ETH/USD and BTC/USD)
+        @param tokens is constructed array from priceFeeds. Always contains 1 less index than priceFeeds
+        @param baseToken should be the underlying mintable ETF security
+        @return nav returns the total price relative to the denominated asset and total baseToken supply
+    */
+    function calculateNAV(
+        address[] calldata priceFeeds,
+        address[] calldata tokens,
+        address baseToken
+        ) external view returns (int256 nav) {
+        int256 holdingValue;
 
-    /// @dev Anyone can change this boolean atm
-    function registerPriceFeed(address _priceFeed, bool _isV3) external {
-        isV3[_priceFeed] = _isV3;
-    }
-
-    /// @param _priceFeeds should all have the same denomination (I.E ETH/USD and BTC/USD)
-    /// @param _baseToken should be the underlying mintable ETF security
-    /// @return nav returns the total price relative to the denominated asset and total baseToken supply
-    function calculateNAV(address[] calldata _priceFeeds, address _baseToken) external view returns (int256 nav) {
-        int256 total;
-
-        for(uint i = 0; i < _priceFeeds.length; i++) {
-            if(isV3[_priceFeeds[i]]) {
-                total += getV3Price(_priceFeeds[i]);
-            } if(!isV3[_priceFeeds[i]]) {
-                total += getV2Price(_priceFeeds[i]);
+        for(uint i = 0; i < priceFeeds.length; i++) {
+            // value += price * token amount
+            if(i==0) {
+            // index 0 will be ETH since its called differently
+            holdingValue += formatPriceFeedDecimals(getV3Price(priceFeeds[i])) * int256(msg.sender.balance);
             } else {
-                revert(string(abi.encode("Non-registered address: ", _priceFeeds[i])));
+            // ERC20 compliant tokens
+            holdingValue += formatPriceFeedDecimals(getV3Price(priceFeeds[i])) * int256(IERC20(tokens[i-1]).balanceOf(msg.sender));
             }
         }
-        nav = total / int256(IERC20(_baseToken).totalSupply());
+        nav = holdingValue / int256(IERC20(baseToken).totalSupply());
     }
 
     /// @dev Formatted getters for price
@@ -42,5 +43,11 @@ contract CalculateNAV is ICalculateNAV {
     function getV2Price(address priceFeed) public view returns (int256 price) {
         //format data here;
         return AggregatorInterface(priceFeed).latestAnswer();
+    }
+
+    /// @dev read off ERC20 decimals later, openzeppelin IERC20 doesnt have it
+    ///      should need token
+    function formatPriceFeedDecimals(int256 feedPrice) private pure returns (int256) {
+        return feedPrice * 10**(18 - 8);
     }
 }
