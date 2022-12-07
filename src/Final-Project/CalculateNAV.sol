@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity 0.8.17;
 
 import "@chainlink/interfaces/AggregatorV3Interface.sol";
@@ -8,8 +8,8 @@ import "./ICalculateNAV.sol";
 /// @notice This contract returns the NAV value based on tracked underlying assets
 contract CalculateNAV is ICalculateNAV {
     /** 
-        @param priceFeeds should all have the same denomination (I.E ETH/USD and BTC/USD)
-        @param tokens Always contains 1 less index than priceFeeds due to ETH balance call
+        @param priceFeeds should all have the same denomination (I.E ETH/USD and BTC/USD), index 0 is ETH
+        @param tokens should contain 1 less index than priceFeeds due to ETH balance call
         @param baseToken should be the underlying mintable ETF security
         @return nav returns the total price relative to the denominated asset and total baseToken supply
 
@@ -24,7 +24,7 @@ contract CalculateNAV is ICalculateNAV {
 
         for(uint i = 0; i < priceFeeds.length; i++) {
             // value += price * token amount
-            if(i==0) {
+            if(i == 0) {
             // index 0 will be ETH since its called differently
             holdingValue += formatPriceFeedDecimals(getV3Price(priceFeeds[i])) * int256(msg.sender.balance);
             } else {
@@ -41,7 +41,7 @@ contract CalculateNAV is ICalculateNAV {
     }
 
     /// @dev read off ERC20 decimals later, openzeppelin IERC20 doesnt have it
-    ///      should need token decimals
+    ///      should need token decimals, baseToken decimals, and priceFeed decimals?
     function formatPriceFeedDecimals(int256 feedPrice) private pure returns (int256) {
         return feedPrice * 10**(18 - 8);
     }
