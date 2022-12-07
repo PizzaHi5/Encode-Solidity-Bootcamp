@@ -31,7 +31,7 @@ contract ETFERC20Test is Test {
 
     function setUp() public {
         ek = new CalculateNAV();
-        eg = new ETFERC20("StarterETF", "ETF", 18, 1000*10**18, address(ek));
+        eg = new ETFERC20("StarterETF", "ETF", 18, 1, address(ek));
     }
 
     function testAddETHPriceFeed() public {
@@ -46,7 +46,7 @@ contract ETFERC20Test is Test {
 
         emit log_int(ek.getV3Price(priceFeeds[0]));
 
-        int nav = ek.calculateNAV(priceFeeds, eg.constructArray(priceFeeds), address(eg));
+        int nav = ek.calculateNAV(priceFeeds, tokens, address(eg));
         emit log_int(nav);
     }
 
@@ -54,7 +54,7 @@ contract ETFERC20Test is Test {
         eg.addETHPriceFeed(priceFeeds[0]);
         uint amount = eg.balanceOf(msg.sender);
         emit log_bytes(abi.encodePacked("Current Balance ", eg.balanceOf(msg.sender).toHexString()));
-        eg.mintWithEth{value: 1 * uint256(ek.calculateNAV(priceFeeds, eg.constructArray(priceFeeds), address(eg)))}(1);
+        eg.mintWithEth{value: 1 * uint256(ek.calculateNAV(priceFeeds, tokens, address(eg)))}(1);
         assertEq(eg.balanceOf(msg.sender), amount + 1);
         emit log_bytes(abi.encodePacked("New Balance ", eg.balanceOf(msg.sender).toHexString()));
     }

@@ -51,89 +51,6 @@
         }
       }
     },
-    "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol": {
-      "lastModificationDate": 1670272445827,
-      "contentHash": "f00f7f6071813249ee968d1114635a81",
-      "sourceName": "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": "^0.8.0",
-      "artifacts": {
-        "AggregatorInterface": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "AggregatorInterface.sol/AggregatorInterface.json"
-        }
-      }
-    },
-    "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol": {
-      "lastModificationDate": 1670272445827,
-      "contentHash": "8634be6a1c8b65b4c0bfd6d1fa765e72",
-      "sourceName": "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol"
-      ],
-      "versionRequirement": "^0.8.0",
-      "artifacts": {
-        "AggregatorV2V3Interface": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "AggregatorV2V3Interface.sol/AggregatorV2V3Interface.json"
-        }
-      }
-    },
     "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
       "lastModificationDate": 1670272445827,
       "contentHash": "d9654a0fc044a31d4106ee6bca772add",
@@ -2556,8 +2473,8 @@
       }
     },
     "src/Final-Project/CalculateNAV.sol": {
-      "lastModificationDate": 1670365300212,
-      "contentHash": "46164034fd9deaa194954bda7671b348",
+      "lastModificationDate": 1670374986665,
+      "contentHash": "962c28627e2b83c51cc5f187789758c6",
       "sourceName": "src/Final-Project/CalculateNAV.sol",
       "solcConfig": {
         "settings": {
@@ -2588,23 +2505,20 @@
         }
       },
       "imports": [
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol",
         "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
-        "lib/solmate/src/auth/Owned.sol",
         "src/Final-Project/ICalculateNAV.sol"
       ],
       "versionRequirement": "=0.8.17",
       "artifacts": {
         "CalculateNAV": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/CalculateNAV.sol/CalculateNAV.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/CalculateNAV.sol/CalculateNAV.json"
         }
       }
     },
     "src/Final-Project/CalculateNav.sol": {
-      "lastModificationDate": 1670365300212,
-      "contentHash": "46164034fd9deaa194954bda7671b348",
+      "lastModificationDate": 1670374986665,
+      "contentHash": "962c28627e2b83c51cc5f187789758c6",
       "sourceName": "src/Final-Project/CalculateNav.sol",
       "solcConfig": {
         "settings": {
@@ -2635,23 +2549,20 @@
         }
       },
       "imports": [
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol",
         "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
-        "lib/solmate/src/auth/Owned.sol",
         "src/Final-Project/ICalculateNAV.sol"
       ],
       "versionRequirement": "=0.8.17",
       "artifacts": {
         "CalculateNAV": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/CalculateNav.sol/CalculateNAV.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/CalculateNav.sol/CalculateNAV.json"
         }
       }
     },
     "src/Final-Project/ETFERC20.sol": {
-      "lastModificationDate": 1670369840046,
-      "contentHash": "5c458b8bdbb5ccdce122444867d0b7b1",
+      "lastModificationDate": 1670374200567,
+      "contentHash": "c5a6bb0e679322ebeaffd51c30803654",
       "sourceName": "src/Final-Project/ETFERC20.sol",
       "solcConfig": {
         "settings": {
@@ -2682,8 +2593,6 @@
         }
       },
       "imports": [
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol",
         "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "lib/solmate/src/auth/Owned.sol",
@@ -3001,8 +2910,8 @@
       }
     },
     "test/BootcampFinalProjct.t.sol": {
-      "lastModificationDate": 1670369625025,
-      "contentHash": "fcc8e4b0fc564f248b7cb083bef7e9d9",
+      "lastModificationDate": 1670373325648,
+      "contentHash": "5f997ccb2249ada6e2de17336976f6ef",
       "sourceName": "test/BootcampFinalProjct.t.sol",
       "solcConfig": {
         "settings": {
@@ -3033,8 +2942,6 @@
         }
       },
       "imports": [
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol",
         "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
         "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Common.sol",

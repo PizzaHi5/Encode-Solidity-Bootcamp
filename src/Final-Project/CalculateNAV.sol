@@ -1,18 +1,19 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
 
-import "@chainlink/interfaces/AggregatorV2V3Interface.sol";
-import "@solmate/src/auth/Owned.sol";
+import "@chainlink/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./ICalculateNAV.sol";
 
-/// @notice This contract returns the NAV value based on tracked underlying assets that owner controls
+/// @notice This contract returns the NAV value based on tracked underlying assets
 contract CalculateNAV is ICalculateNAV {
     /** 
         @param priceFeeds should all have the same denomination (I.E ETH/USD and BTC/USD)
-        @param tokens is constructed array from priceFeeds. Always contains 1 less index than priceFeeds
+        @param tokens Always contains 1 less index than priceFeeds due to ETH balance call
         @param baseToken should be the underlying mintable ETF security
         @return nav returns the total price relative to the denominated asset and total baseToken supply
+
+        @notice If the owner of the ETFERC20 withdraws assets, the NAV will fall accordingly
     */
     function calculateNAV(
         address[] calldata priceFeeds,
@@ -37,16 +38,10 @@ contract CalculateNAV is ICalculateNAV {
     /// @dev Formatted getters for price
     function getV3Price(address priceFeed) public view returns (int256 price) {
         (, price,,,) = AggregatorV3Interface(priceFeed).latestRoundData();
-        //format data here
-    }
-
-    function getV2Price(address priceFeed) public view returns (int256 price) {
-        //format data here;
-        return AggregatorInterface(priceFeed).latestAnswer();
     }
 
     /// @dev read off ERC20 decimals later, openzeppelin IERC20 doesnt have it
-    ///      should need token
+    ///      should need token decimals
     function formatPriceFeedDecimals(int256 feedPrice) private pure returns (int256) {
         return feedPrice * 10**(18 - 8);
     }

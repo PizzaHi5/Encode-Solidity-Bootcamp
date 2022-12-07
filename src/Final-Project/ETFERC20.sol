@@ -7,15 +7,15 @@ import { ICalculateNAV } from "./CalculateNAV.sol";
 
 contract ETFERC20 is ERC20, Owned(msg.sender) {
     address[] public trackedPriceFeeds;
+    address[] public tokens;
     address public calcNav;
 
-    mapping(address => address) feedToToken;
-
+    //require constructor to also include msg.value to set starting share value
     constructor(
     string memory _name, 
     string memory _symbol, 
     uint8 _decimals,
-    uint256 amount, 
+    uint256 amount,
     address _calcNav
     ) ERC20 (_name, _symbol, _decimals) {
         calcNav =_calcNav;
@@ -25,7 +25,7 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
     function mintWithEth(uint256 amount) public payable {
         require(msg.value >= amount * uint256(ICalculateNAV(calcNav).calculateNAV(
             trackedPriceFeeds, 
-            constructArray(trackedPriceFeeds), 
+            tokens, 
             address(this))));
 
         _mint(msg.sender, amount);
@@ -44,7 +44,7 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
     function checkNAV() external view returns (int256) {
         return ICalculateNAV(calcNav).calculateNAV(
             trackedPriceFeeds, 
-            constructArray(trackedPriceFeeds), 
+            tokens, 
             address(this));
     }
 
@@ -52,21 +52,16 @@ contract ETFERC20 is ERC20, Owned(msg.sender) {
     function addETHPriceFeed(address priceFeed) external onlyOwner {
         //check if priceFeeds has values, if does, set index 0 instead of push
         trackedPriceFeeds.push(priceFeed);
+
     }
 
     function addTrackedPriceFeeds(address priceFeed, address feedToken) external onlyOwner {
         //require IsContract
         trackedPriceFeeds.push(priceFeed);
-        feedToToken[priceFeed] = feedToken;
+        tokens.push(feedToken);
     }
 
     function updateCalcNav(address _calcNav) external onlyOwner {
         calcNav = _calcNav;
-    }
-
-    function constructArray(address[] memory priceFeeds) public view returns (address[] memory tokens) {
-        for(uint i = 0; i < priceFeeds.length - 1; i++) {
-            tokens[i] = feedToToken[priceFeeds[i + 1]];
-        }
     }
 }
