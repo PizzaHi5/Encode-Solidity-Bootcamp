@@ -30,8 +30,8 @@ contract ETFERC20 is ERC20, Spoke {
     Spoke (_owner, _tokenId)
     payable
     {
-        require(msg.value > 0, "Required to send Eth");
-        require(_amount > 0, "Required to mint tokens");
+        require(msg.value > 0);
+        require(_amount > 0);
         calcNav =_calcNav;
         _mint(_owner, _amount);
     }
@@ -50,18 +50,6 @@ contract ETFERC20 is ERC20, Spoke {
         _mint(msg.sender, amount);
     }
 
-    /// @notice Allows minting of tokens at NAV value with registered tokens
-    function mintWithRegisteredToken(uint256 amount, address token) external payable {
-        //insert logic here
-    }
-
-    ///@notice Allows burning of tokens to withdraw from contract
-    function burn(uint256 amount) external payable {
-        require(balanceOf[msg.sender] >= amount);
-        _burn(msg.sender, amount);
-        //return locked eth/token to sender
-    }
-
     //
     //  EXTERNAL VIEW
     //
@@ -78,12 +66,12 @@ contract ETFERC20 is ERC20, Spoke {
     //
 
     function setName(string memory _name) external onlyOwner {
-        require(msg.sender == owner, "NOT_AUTHORIZED");
+        require(msg.sender == owner);
         name = _name;
     }
 
     function setTokenURI(string memory _tokenURI) external onlyOwner {
-        require(msg.sender == owner, "NOT_AUTHORIZED");
+        require(msg.sender == owner);
         tokenURI = _tokenURI;
     }
 
@@ -97,10 +85,6 @@ contract ETFERC20 is ERC20, Spoke {
         //require IsContract
         trackedPriceFeeds.push(priceFeed);
         tokens.push(feedToken);
-    }
-
-    function updateCalcNav(address _calcNav) external onlyOwner {
-        calcNav = _calcNav;
     }
 
     function returnEth() external payable onlyOwner {

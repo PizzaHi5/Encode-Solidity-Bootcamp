@@ -2473,8 +2473,8 @@
       }
     },
     "src/Final-Project/CalculateNAV.sol": {
-      "lastModificationDate": 1670374986665,
-      "contentHash": "962c28627e2b83c51cc5f187789758c6",
+      "lastModificationDate": 1670445838300,
+      "contentHash": "aaf10d44243b843d9dbaa81486334f9d",
       "sourceName": "src/Final-Project/CalculateNAV.sol",
       "solcConfig": {
         "settings": {
@@ -2512,13 +2512,13 @@
       "versionRequirement": "=0.8.17",
       "artifacts": {
         "CalculateNAV": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/CalculateNAV.sol/CalculateNAV.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/CalculateNAV.sol/CalculateNAV.json"
         }
       }
     },
     "src/Final-Project/CalculateNav.sol": {
-      "lastModificationDate": 1670374986665,
-      "contentHash": "962c28627e2b83c51cc5f187789758c6",
+      "lastModificationDate": 1670445838300,
+      "contentHash": "aaf10d44243b843d9dbaa81486334f9d",
       "sourceName": "src/Final-Project/CalculateNav.sol",
       "solcConfig": {
         "settings": {
@@ -2556,13 +2556,58 @@
       "versionRequirement": "=0.8.17",
       "artifacts": {
         "CalculateNAV": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/CalculateNav.sol/CalculateNAV.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/Final-Project/CalculateNav.sol/CalculateNAV.json"
+        }
+      }
+    },
+    "src/Final-Project/ERC721Hub.sol": {
+      "lastModificationDate": 1670444643436,
+      "contentHash": "09a15252582c0ce8657a4582e88b88f5",
+      "sourceName": "src/Final-Project/ERC721Hub.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC721Hub": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ERC721Hub.sol/ERC721Hub.json"
+        },
+        "ISpoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ERC721Hub.sol/ISpoke.json"
         }
       }
     },
     "src/Final-Project/ETFERC20.sol": {
-      "lastModificationDate": 1670374200567,
-      "contentHash": "c5a6bb0e679322ebeaffd51c30803654",
+      "lastModificationDate": 1670447483417,
+      "contentHash": "2c280e325bd2e45b04efa67d4039ad27",
       "sourceName": "src/Final-Project/ETFERC20.sol",
       "solcConfig": {
         "settings": {
@@ -2593,12 +2638,10 @@
         }
       },
       "imports": [
-        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
-        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "lib/solmate/src/auth/Owned.sol",
         "lib/solmate/src/tokens/ERC20.sol",
-        "src/Final-Project/CalculateNAV.sol",
-        "src/Final-Project/ICalculateNAV.sol"
+        "src/Final-Project/ICalculateNAV.sol",
+        "src/Final-Project/Spoke.sol"
       ],
       "versionRequirement": "=0.8.17",
       "artifacts": {
@@ -2644,6 +2687,145 @@
       "artifacts": {
         "ICalculateNAV": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "ICalculateNAV.sol/ICalculateNAV.json"
+        }
+      }
+    },
+    "src/Final-Project/SampleSpoke.sol": {
+      "lastModificationDate": 1670444843812,
+      "contentHash": "67456963f825d75698a62117b25f3626",
+      "sourceName": "src/Final-Project/SampleSpoke.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "src/Final-Project/Spoke.sol"
+      ],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "SampleSpoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "SampleSpoke.sol/SampleSpoke.json"
+        }
+      }
+    },
+    "src/Final-Project/SampleSpokeHub.sol": {
+      "lastModificationDate": 1670447522767,
+      "contentHash": "42326971e0d5e4d7f72bc9abe578af92",
+      "sourceName": "src/Final-Project/SampleSpokeHub.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "src/Final-Project/CalculateNAV.sol",
+        "src/Final-Project/ERC721Hub.sol",
+        "src/Final-Project/ETFERC20.sol",
+        "src/Final-Project/ICalculateNAV.sol",
+        "src/Final-Project/Spoke.sol"
+      ],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "ISampleSpoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "SampleSpokeHub.sol/ISampleSpoke.json"
+        },
+        "SampleERC721Hub": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "SampleSpokeHub.sol/SampleERC721Hub.json"
+        }
+      }
+    },
+    "src/Final-Project/Spoke.sol": {
+      "lastModificationDate": 1670439038457,
+      "contentHash": "cc63fc8a1101832eba35ad61c4c24ed6",
+      "sourceName": "src/Final-Project/Spoke.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Spoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Spoke.sol/Spoke.json"
         }
       }
     },
@@ -2910,8 +3092,8 @@
       }
     },
     "test/BootcampFinalProjct.t.sol": {
-      "lastModificationDate": 1670373325648,
-      "contentHash": "5f997ccb2249ada6e2de17336976f6ef",
+      "lastModificationDate": 1670447586071,
+      "contentHash": "957dfcdea59b06bb2e9d3e6405d23d75",
       "sourceName": "test/BootcampFinalProjct.t.sol",
       "solcConfig": {
         "settings": {
@@ -2962,10 +3144,10 @@
         "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
         "lib/solmate/src/auth/Owned.sol",
         "lib/solmate/src/tokens/ERC20.sol",
-        "src/Final-Project/CalculateNAV.sol",
         "src/Final-Project/CalculateNav.sol",
         "src/Final-Project/ETFERC20.sol",
-        "src/Final-Project/ICalculateNAV.sol"
+        "src/Final-Project/ICalculateNAV.sol",
+        "src/Final-Project/Spoke.sol"
       ],
       "versionRequirement": "^0.8.0",
       "artifacts": {

@@ -6,14 +6,13 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./ICalculateNAV.sol";
 
 /// @notice This contract returns the NAV value based on tracked underlying assets
+/// @dev This contract is incomplete and not recommended for procution
 contract CalculateNAV is ICalculateNAV {
     /** 
         @param priceFeeds should all have the same denomination (I.E ETH/USD and BTC/USD), index 0 is ETH
         @param tokens should contain 1 less index than priceFeeds due to ETH balance call
         @param baseToken should be the underlying mintable ETF security
-        @return nav returns the total price relative to the denominated asset and total baseToken supply
-
-        @notice If the owner of the ETFERC20 withdraws assets, the NAV will fall accordingly
+        @return nav returns the NAV relative to the denominated asset and total baseToken supply
     */
     function calculateNAV(
         address[] calldata priceFeeds,

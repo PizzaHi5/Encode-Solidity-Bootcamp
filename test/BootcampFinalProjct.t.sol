@@ -31,7 +31,7 @@ contract ETFERC20Test is Test {
 
     function setUp() public {
         ek = new CalculateNAV();
-        eg = new ETFERC20("StarterETF", "ETF", 18, 1, address(ek));
+        eg = new ETFERC20{value: 1 ether}("StarterETF", "ETF", 18, 1, 0, address(this), address(ek));
     }
 
     function testAddETHPriceFeed() public {
