@@ -8,22 +8,22 @@
     To do this, I used solmate ERC20 contract and chainlink priceFeeds.
 
 Reference Pricefeeds for mainnet fork testing and goerli deployment
-https://docs.chain.link/data-feeds/price-feeds/addresses#Ethereum%20Mainnet
+    https://docs.chain.link/data-feeds/price-feeds/addresses#Ethereum%20Mainnet
 
-For mainnet addresses used, reference BootcampProjct.t.sol in test folder
+    For mainnet addresses used, reference BootcampProjct.t.sol in test folder
 
-Goerli Testnet PriceFeeds
-0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e //ETH/USD
-0x48731cF7e84dc94C5f84577882c14Be11a5B7456 //LINK/USD
+    Goerli Testnet PriceFeeds
+    0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e //ETH/USD
+    0x48731cF7e84dc94C5f84577882c14Be11a5B7456 //LINK/USD
 
-Goerli Tokens
-0x326C977E6efc84E512bB9C30f76E30c160eD06FB //LINK
+    Goerli Tokens
+    0x326C977E6efc84E512bB9C30f76E30c160eD06FB //LINK
 
 Flow for Goerli deployment,
 - Deployed SampleSpokeHub.sol after trimming some strings/functions due to error:
     Warning: Contract code size is 27717 bytes and exceeds 24576 bytes 
     (a limit introduced in Spurious Dragon)
-    - Reference Shortened-Contracts directory, these are the Contracts deployed on goerli
+    - Reference Shortened-Contracts directory, these are the contracts deployed on goerli
     address: 0x67df00D251b71a15776770ba5aFFb9EA6B5b3551
 
 - Deployed CalculateNAV.sol 
