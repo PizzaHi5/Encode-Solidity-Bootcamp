@@ -3,3 +3,5 @@ Homework 23
 . Write a simple function that will interact with the String Utils library. This function
 should take in a String, and add the literal " from ETH Denver" and return the resulting
 String and the length of the resulting String.
+
+- Check! Made a standardized ERC20 that has a function that concats that to the name
