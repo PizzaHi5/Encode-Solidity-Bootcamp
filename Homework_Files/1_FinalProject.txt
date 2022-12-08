@@ -2,7 +2,7 @@
     to generate custom ERC721 implementation that we could each work on individually
 
     My implementation is an ETF ERC20. 
-    Concept: Ownable ERC721  ETF contract that mints ERC20 shares equal to the 
+    Concept: Ownable ERC721 ETF contract that mints ERC20 shares equal to the 
         calculated NAV derived from TVL and token supply
 
     To do this, I used solmate ERC20 contract and chainlink priceFeeds.
@@ -32,7 +32,7 @@ Flow for Goerli deployment,
 - Called the MintWithEth{value: 0.02 ether}(address CalculateNAV) function in 
     SampleSpokeHub which deploys ETFERC20 with 0.02 ether. and mints 1 ERC20 Token
 
-- In ETFERC20 (0x1E0fcdc02dC33fb04Fa24E438E57a7024E2834b1),
+- In ETFERC20, (0x1E0fcdc02dC33fb04Fa24E438E57a7024E2834b1)
     - called checkNAV() which returned: 0 
     [thats what we should see since theres no priceFeed yet]
 
@@ -41,6 +41,16 @@ Flow for Goerli deployment,
 
     - called checkNAV() which returned:
     24570011671200000000000000000000000000 = (0.02ether * eth price) / 1
-    *noted* I should have minted 1x10^18
+    *noted* I should have minted 1x10^18 because decimals
 
     Does as intended! Wooooo! :D
+
+For further reference,
+
+ERC721 SpokeHub on OpenSea
+https://testnets.opensea.io/collection/sampleerc71spokehub
+
+ETFERC20 ERC721 Spoke on OpenSea
+https://testnets.opensea.io/assets/goerli/0x67df00d251b71a15776770ba5affb9ea6b5b3551/1
+
+No images or anything fancy, but the concept is there :)
