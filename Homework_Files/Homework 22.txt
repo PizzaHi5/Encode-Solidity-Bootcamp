@@ -12,3 +12,14 @@ pick 100 winners which will be added to the winners array, the UI will then call
 function to pay each of the winners.
 The remaining balance will be kept as profit for the developers."
 Write out the main points that you would include in an audit report.
+
+- Lots of notes added, review BootcampHW22.sol for my notes to this contract.
+
+- Main points: 
+    - Improved access restrictions to functions
+    - Better usage of integers for ether denominations
+    - Reduction in storage variables for gas efficiency
+    - Alternate logic recommendation in payout()
+    - Alternate transfer method recommendation
+    - Adding a receiveEther function to pay profits to developers
+    - Removal of unused variables
