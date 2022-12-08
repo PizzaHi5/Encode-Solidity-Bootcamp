@@ -2606,8 +2606,8 @@
       }
     },
     "src/Final-Project/ETFERC20.sol": {
-      "lastModificationDate": 1670447483417,
-      "contentHash": "2c280e325bd2e45b04efa67d4039ad27",
+      "lastModificationDate": 1670450542413,
+      "contentHash": "0290b9ce0d00cf22eb89ac3d16f6710c",
       "sourceName": "src/Final-Project/ETFERC20.sol",
       "solcConfig": {
         "settings": {
@@ -2734,7 +2734,7 @@
       }
     },
     "src/Final-Project/SampleSpokeHub.sol": {
-      "lastModificationDate": 1670447522767,
+      "lastModificationDate": 1670454567099,
       "contentHash": "42326971e0d5e4d7f72bc9abe578af92",
       "sourceName": "src/Final-Project/SampleSpokeHub.sol",
       "solcConfig": {
@@ -2784,6 +2784,229 @@
         },
         "SampleERC721Hub": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "SampleSpokeHub.sol/SampleERC721Hub.json"
+        }
+      }
+    },
+    "src/Final-Project/Shortened-Contracts/ERC721Hub.sol": {
+      "lastModificationDate": 1670456669932,
+      "contentHash": "09a15252582c0ce8657a4582e88b88f5",
+      "sourceName": "src/Final-Project/Shortened-Contracts/ERC721Hub.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC721Hub": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ERC721Hub.sol/ERC721Hub.json"
+        },
+        "ISpoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ERC721Hub.sol/ISpoke.json"
+        }
+      }
+    },
+    "src/Final-Project/Shortened-Contracts/ETFERC20.sol": {
+      "lastModificationDate": 1670456616888,
+      "contentHash": "8052c90f060c290c7654f622d9b3d992",
+      "sourceName": "src/Final-Project/Shortened-Contracts/ETFERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol",
+        "src/Final-Project/Shortened-Contracts/Spoke.sol"
+      ],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "ETFERC20": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ETFERC20.sol/ETFERC20.json"
+        }
+      }
+    },
+    "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol": {
+      "lastModificationDate": 1670456636981,
+      "contentHash": "180ec6d43c29d66b0617f9b5d6a52d0d",
+      "sourceName": "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "ICalculateNAV": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ICalculateNAV.sol/ICalculateNAV.json"
+        }
+      }
+    },
+    "src/Final-Project/Shortened-Contracts/SampleSpokeHub.sol": {
+      "lastModificationDate": 1670456727922,
+      "contentHash": "a7f9595d78cd36ca4c88ca2e3306b724",
+      "sourceName": "src/Final-Project/Shortened-Contracts/SampleSpokeHub.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "src/Final-Project/Shortened-Contracts/ERC721Hub.sol",
+        "src/Final-Project/Shortened-Contracts/ETFERC20.sol",
+        "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol",
+        "src/Final-Project/Shortened-Contracts/Spoke.sol"
+      ],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "ISampleSpoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "SampleSpokeHub.sol/ISampleSpoke.json"
+        },
+        "SampleERC721Hub": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "SampleSpokeHub.sol/SampleERC721Hub.json"
+        }
+      }
+    },
+    "src/Final-Project/Shortened-Contracts/Spoke.sol": {
+      "lastModificationDate": 1670456683932,
+      "contentHash": "dc32b93752a5b1b109e80a18211b7fce",
+      "sourceName": "src/Final-Project/Shortened-Contracts/Spoke.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/auth/Owned.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Spoke": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Spoke.sol/Spoke.json"
         }
       }
     },
