@@ -43,7 +43,7 @@
   "methodIdentifiers": {
     "calculateNAV(address[],address[],address)": "e4ffaa4a"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"priceFeeds\",\"type\":\"address[]\"},{\"internalType\":\"address[]\",\"name\":\"tokens\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"_baseToken\",\"type\":\"address\"}],\"name\":\"calculateNAV\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"nav\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Final-Project/Shortened-Contracts/ICalculateNAV.sol\":\"ICalculateNAV\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=lib/chainlink/contracts/src/v0.8/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@solmate/=lib/solmate/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":chainlink/=lib/chainlink/contracts/src/v0.8/dev/vendor/@arbitrum/nitro-contracts/src/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\",\":v3-core/=lib/v3-core/\"]},\"sources\":{\"src/Final-Project/Shortened-Contracts/ICalculateNAV.sol\":{\"keccak256\":\"0xda8abea57c0cd85ab42d6c1dff7d0010af25e09fbb013ac8fa2fc08ef0a94d49\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://6fb300e2496b4b9ac985d4e342c2e875c6c01f011581df00392478235d0e5c98\",\"dweb:/ipfs/QmRG3rQ9rBLGeCwsRFpXqUDRogLRuhvqwoPAuf1LXSEwTH\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"priceFeeds\",\"type\":\"address[]\"},{\"internalType\":\"address[]\",\"name\":\"tokens\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"_baseToken\",\"type\":\"address\"}],\"name\":\"calculateNAV\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"nav\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Final-Project/ICalculateNAV.sol\":\"ICalculateNAV\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=lib/chainlink/contracts/src/v0.8/\",\":@forge-std/=lib/forge-std/src/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@solmate/=lib/solmate/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":base64/=lib/base64/\",\":chainlink/=lib/chainlink/contracts/src/v0.8/dev/vendor/@arbitrum/nitro-contracts/src/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":solmate/=lib/solmate/src/\",\":v3-core/=lib/v3-core/\"]},\"sources\":{\"src/Final-Project/ICalculateNAV.sol\":{\"keccak256\":\"0xcbba95e8b572423a5205489bc4fffbaad421a62f913badb694fa13b8652e5a72\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c218ea11be97bc92febf87a12283c4cec9fef841dce91a8183ae070705a85131\",\"dweb:/ipfs/Qmd6bTKtPy5AeH12rfSJ8JurRzJNNezzhmHzaCNGZpAbcN\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.17+commit.8df45f5f"
@@ -115,37 +115,37 @@
         "bytecodeHash": "ipfs"
       },
       "compilationTarget": {
-        "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol": "ICalculateNAV"
+        "src/Final-Project/ICalculateNAV.sol": "ICalculateNAV"
       },
       "libraries": {}
     },
     "sources": {
-      "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol": {
-        "keccak256": "0xda8abea57c0cd85ab42d6c1dff7d0010af25e09fbb013ac8fa2fc08ef0a94d49",
+      "src/Final-Project/ICalculateNAV.sol": {
+        "keccak256": "0xcbba95e8b572423a5205489bc4fffbaad421a62f913badb694fa13b8652e5a72",
         "urls": [
-          "bzz-raw://6fb300e2496b4b9ac985d4e342c2e875c6c01f011581df00392478235d0e5c98",
-          "dweb:/ipfs/QmRG3rQ9rBLGeCwsRFpXqUDRogLRuhvqwoPAuf1LXSEwTH"
+          "bzz-raw://c218ea11be97bc92febf87a12283c4cec9fef841dce91a8183ae070705a85131",
+          "dweb:/ipfs/Qmd6bTKtPy5AeH12rfSJ8JurRzJNNezzhmHzaCNGZpAbcN"
         ],
-        "license": "AGPL-3.0-only"
+        "license": "MIT"
       }
     },
     "version": 1
   },
   "ast": {
-    "absolutePath": "src/Final-Project/Shortened-Contracts/ICalculateNAV.sol",
-    "id": 27917,
+    "absolutePath": "src/Final-Project/ICalculateNAV.sol",
+    "id": 26951,
     "exportedSymbols": {
       "ICalculateNAV": [
-        27916
+        26950
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "42:211:29",
+    "src": "32:211:26",
     "nodes": [
       {
-        "id": 27902,
+        "id": 26936,
         "nodeType": "PragmaDirective",
-        "src": "42:23:29",
+        "src": "32:23:26",
         "nodes": [],
         "literals": [
           "solidity",
@@ -154,34 +154,34 @@
         ]
       },
       {
-        "id": 27916,
+        "id": 26950,
         "nodeType": "ContractDefinition",
-        "src": "67:186:29",
+        "src": "57:186:26",
         "nodes": [
           {
-            "id": 27915,
+            "id": 26949,
             "nodeType": "FunctionDefinition",
-            "src": "97:154:29",
+            "src": "87:154:26",
             "nodes": [],
             "functionSelector": "e4ffaa4a",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "calculateNAV",
-            "nameLocation": "106:12:29",
+            "nameLocation": "96:12:26",
             "parameters": {
-              "id": 27911,
+              "id": 26945,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27905,
+                  "id": 26939,
                   "mutability": "mutable",
                   "name": "priceFeeds",
-                  "nameLocation": "143:10:29",
+                  "nameLocation": "133:10:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27915,
-                  "src": "124:29:29",
+                  "scope": 26949,
+                  "src": "114:29:26",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -190,19 +190,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 27903,
+                      "id": 26937,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "124:7:29",
+                      "src": "114:7:26",
                       "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 27904,
+                    "id": 26938,
                     "nodeType": "ArrayTypeName",
-                    "src": "124:9:29",
+                    "src": "114:9:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -212,13 +212,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 27908,
+                  "id": 26942,
                   "mutability": "mutable",
                   "name": "tokens",
-                  "nameLocation": "179:6:29",
+                  "nameLocation": "169:6:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27915,
-                  "src": "160:25:29",
+                  "scope": 26949,
+                  "src": "150:25:26",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -227,19 +227,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 27906,
+                      "id": 26940,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "160:7:29",
+                      "src": "150:7:26",
                       "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 27907,
+                    "id": 26941,
                     "nodeType": "ArrayTypeName",
-                    "src": "160:9:29",
+                    "src": "150:9:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -249,13 +249,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 27910,
+                  "id": 26944,
                   "mutability": "mutable",
                   "name": "_baseToken",
-                  "nameLocation": "199:10:29",
+                  "nameLocation": "189:10:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27915,
-                  "src": "191:18:29",
+                  "scope": 26949,
+                  "src": "181:18:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -263,10 +263,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 27909,
+                    "id": 26943,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "191:7:29",
+                    "src": "181:7:26",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -276,21 +276,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "118:97:29"
+              "src": "108:97:26"
             },
             "returnParameters": {
-              "id": 27914,
+              "id": 26948,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27913,
+                  "id": 26947,
                   "mutability": "mutable",
                   "name": "nav",
-                  "nameLocation": "246:3:29",
+                  "nameLocation": "236:3:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27915,
-                  "src": "239:10:29",
+                  "scope": 26949,
+                  "src": "229:10:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -298,10 +298,10 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 27912,
+                    "id": 26946,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "239:6:29",
+                    "src": "229:6:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
@@ -310,9 +310,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "238:12:29"
+              "src": "228:12:26"
             },
-            "scope": 27916,
+            "scope": 26950,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -325,15 +325,15 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          27916
+          26950
         ],
         "name": "ICalculateNAV",
-        "nameLocation": "77:13:29",
-        "scope": 27917,
+        "nameLocation": "67:13:26",
+        "scope": 26951,
         "usedErrors": []
       }
     ],
-    "license": "AGPL-3.0-only"
+    "license": "MIT"
   },
-  "id": 29
+  "id": 26
 }

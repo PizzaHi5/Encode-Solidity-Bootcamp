@@ -756,6 +756,48 @@
         }
       }
     },
+    "lib/openzeppelin-contracts/contracts/security/Pausable.sol": {
+      "lastModificationDate": 1669583063020,
+      "contentHash": "25c8108f36fdd472bc78d4c4af240c11",
+      "sourceName": "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Pausable": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Pausable.sol/Pausable.json"
+        }
+      }
+    },
     "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1669583063296,
       "contentHash": "834a0dde221759af42b030253315b086",
@@ -1555,6 +1597,46 @@
         }
       }
     },
+    "lib/solmate/src/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1670090642290,
+      "contentHash": "cf9480663950b4091d14b174c3ec0414",
+      "sourceName": "lib/solmate/src/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ReentrancyGuard": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "ReentrancyGuard.sol/ReentrancyGuard.json"
+        }
+      }
+    },
     "lib/v3-core/contracts/interfaces/IUniswapV3Factory.sol": {
       "lastModificationDate": 1669583127526,
       "contentHash": "f0eeb76e5ae42bcbacc8efc10e091716",
@@ -1998,8 +2080,8 @@
       }
     },
     "src/BootcampHW21.sol": {
-      "lastModificationDate": 1670025283252,
-      "contentHash": "d94bc36131576e2023104a2c7ab1d228",
+      "lastModificationDate": 1670614133609,
+      "contentHash": "4122bd1464784e67a911a25957ea622e",
       "sourceName": "src/BootcampHW21.sol",
       "solcConfig": {
         "settings": {
@@ -2038,6 +2120,98 @@
       "artifacts": {
         "InteractWithUniswap": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "BootcampHW21.sol/InteractWithUniswap.json"
+        }
+      }
+    },
+    "src/BootcampHW22.sol": {
+      "lastModificationDate": 1670533738126,
+      "contentHash": "b50f42739e83596ae0fd565e5e767cc4",
+      "sourceName": "src/BootcampHW22.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.4",
+      "artifacts": {
+        "DogCoinGame": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "BootcampHW22.sol/DogCoinGame.json"
+        }
+      }
+    },
+    "src/BootcampHW23.sol": {
+      "lastModificationDate": 1670537681327,
+      "contentHash": "8c1cc3e8d55d6e8dc0092e283ae75b5f",
+      "sourceName": "src/BootcampHW23.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/security/Pausable.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "VolcanoCoin": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "BootcampHW23.sol/VolcanoCoin.json"
         }
       }
     },
@@ -3315,8 +3489,8 @@
       }
     },
     "test/BootcampFinalProjct.t.sol": {
-      "lastModificationDate": 1670447586071,
-      "contentHash": "957dfcdea59b06bb2e9d3e6405d23d75",
+      "lastModificationDate": 1670613467294,
+      "contentHash": "987e8c9e5ec5660a72f5232b7dd1d59c",
       "sourceName": "test/BootcampFinalProjct.t.sol",
       "solcConfig": {
         "settings": {
@@ -3501,8 +3675,8 @@
       }
     },
     "test/BootcampHw20.t.sol": {
-      "lastModificationDate": 1670018526605,
-      "contentHash": "7bb3f6abe76f77513d654f56817cf705",
+      "lastModificationDate": 1670616038336,
+      "contentHash": "d992a9c68d6d476c42d973f564d35912",
       "sourceName": "test/BootcampHw20.t.sol",
       "solcConfig": {
         "settings": {

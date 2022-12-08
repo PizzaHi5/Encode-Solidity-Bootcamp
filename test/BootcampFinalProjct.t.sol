@@ -30,8 +30,8 @@ contract ETFERC20Test is Test {
         ];
 
     function setUp() public {
-        ek = new CalculateNAV();
-        eg = new ETFERC20{value: 1 ether}("StarterETF", "ETF", 18, 1, 0, address(this), address(ek));
+        ek = new CalculateNAV();                                    // 21+18 0s
+        eg = new ETFERC20{value: 1 ether}("StarterETF", "ETF", 18, 1000000000000000000000000000000000000000, 0, address(this), address(ek));
     }
 
     function testAddETHPriceFeed() public {
@@ -51,11 +51,13 @@ contract ETFERC20Test is Test {
     }
 
     function testMintWithEth() public {
-        eg.addETHPriceFeed(priceFeeds[0]);
-        uint amount = eg.balanceOf(msg.sender);
-        emit log_bytes(abi.encodePacked("Current Balance ", eg.balanceOf(msg.sender).toHexString()));
-        eg.mintWithEth{value: 1 * uint256(ek.calculateNAV(priceFeeds, tokens, address(eg)))}(1);
-        assertEq(eg.balanceOf(msg.sender), amount + 1);
-        emit log_bytes(abi.encodePacked("New Balance ", eg.balanceOf(msg.sender).toHexString()));
+        testCalculateNAV();
+        uint amount = eg.balanceOf(address(this));
+        emit log(string(abi.encodePacked("Current Balance: ", eg.balanceOf(address(this)).toString())));
+        // mint 1 token
+        uint256 temp = uint256(ek.calculateNAV(priceFeeds, tokens, address(eg)));
+        eg.mintWithEth{value: temp}(1);
+        assertEq(eg.balanceOf(address(this)), amount + 1);
+        emit log(string(abi.encodePacked("New Balance: ", eg.balanceOf(address(this)).toString())));
     }
 }
