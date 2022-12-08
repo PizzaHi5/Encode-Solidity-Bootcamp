@@ -7,6 +7,9 @@
 
     To do this, I used solmate ERC20 contract and chainlink priceFeeds.
 
+    Once completing my implementation, I inherited Spoke implementation which are made
+        thru the ERC721 SpokeHub. 
+
 Reference Pricefeeds for mainnet fork testing and goerli deployment
     https://docs.chain.link/data-feeds/price-feeds/addresses#Ethereum%20Mainnet
 
