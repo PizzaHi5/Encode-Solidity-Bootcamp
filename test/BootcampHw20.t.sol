@@ -75,16 +75,16 @@ contract UniswapTest is Test {
     function testExactInputSingleDAItoUSDC() public {
     (bool temp, bytes memory data) = router.call(abi.encodeWithSelector(
         0x414bf389, //got selector off Uniswap Router on etherscan
-        ISwapRouter.ExactInputSingleParams(
-            dai,
-            usdc,
-            3000,
-            msg.sender,
-            getMaxUint256(),
-            10,
-            0,
-            0
-        )
+        ISwapRouter.ExactInputSingleParams({
+            tokenIn: dai,
+            tokenOut: usdc,
+            fee: 3000,
+            recipient: msg.sender,
+            deadline: getMaxUint256(),
+            amountIn: 10,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        })
     ));
     /// @dev Checking USDC balance post swap
     (temp, data) = usdc.call(abi.encodeWithSignature("balanceOf(address)", address(this)));
@@ -94,16 +94,16 @@ contract UniswapTest is Test {
     function testExactInputSingleDAItoBUSD() public {
     (bool temp, bytes memory data) = router.call(abi.encodeWithSelector(
         0x414bf389, //got selector off Uniswap Router on etherscan
-        ISwapRouter.ExactInputSingleParams(
-            dai,
-            busd,
-            3000,
-            msg.sender,
-            getMaxUint256(),
-            10,
-            0,
-            0
-        )
+         ISwapRouter.ExactInputSingleParams({
+            tokenIn: dai,
+            tokenOut: busd,
+            fee: 3000,
+            recipient: msg.sender,
+            deadline: getMaxUint256(),
+            amountIn: 10,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        })
     ));
     /// @dev Checking DAI balance post swap
     (temp, data) = dai.call(abi.encodeWithSignature("balanceOf(address)", address(this)));

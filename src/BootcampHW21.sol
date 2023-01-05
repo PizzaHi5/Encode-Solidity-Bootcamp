@@ -18,16 +18,16 @@ contract InteractWithUniswap {
         //(uint160 price,,,,,,) = IUniswapV3PoolState(pool).slot0();
 
         return ISwapRouter(router).exactInputSingle(
-            ISwapRouter.ExactInputSingleParams(
-            token1,
-            token2,
-            fee,
-            msg.sender,
-            getMaxUint256(),
-            amount,
-            0,
-            0 //price
-        ));
+            ISwapRouter.ExactInputSingleParams({
+            tokenIn: token1,
+            tokenOut: token2,
+            fee: fee,
+            recipient: msg.sender,
+            deadline: getMaxUint256(),
+            amountIn: amount,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        }));
     }
 
     function getMaxUint256() public pure returns (uint256) {

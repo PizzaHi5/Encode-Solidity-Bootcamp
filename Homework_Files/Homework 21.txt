@@ -65,3 +65,6 @@ Several Days Later
     directly through a nice UI. This made it far easier to debug all the problems I was running into. 
 
     Succeeded in executing a transaction! :)
+
+Much later,
+    Found out I was setting up the structs using the wrong syntax. Needed to follow {var: variable}
